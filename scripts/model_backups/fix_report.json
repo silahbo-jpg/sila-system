@@ -1,0 +1,3994 @@
+[
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\db\\models\\user.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\db\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\db\\models\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\models\\geocodificacao_endereco.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\models\\normalizacao_endereco.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\models\\validacao_c_e_p.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\routes\\geocodificacao_endereco.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\routes\\normalizacao_endereco.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\routes\\validacao_c_e_p.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\schemas\\geocodificacao_endereco.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\schemas\\normalizacao_endereco.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\schemas\\validacao_c_e_p.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\schemas\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\services\\address_service.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\address\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\appointments\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\appointments\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\appointments\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\appointments\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\appointments\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\auth\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\auth\\models\\autenticacao_multifator.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\auth\\models\\controle_acesso.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\auth\\models\\gestao_usuario.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\auth\\models\\sessao_segura.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\auth\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\auth\\routes\\autenticacao_multifator.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\auth\\routes\\controle_acesso.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\auth\\routes\\gestao_usuario.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\auth\\routes\\sessao_segura.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\auth\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\models\\atualizacao_b_i.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\models\\atualizacao_endereco.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\models\\certidao_casamento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\models\\certidao_nascimento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\models\\certidao_obito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\models\\declaracao_residencia.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\models\\emissao_b_i.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\models\\emissao_passaporte.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\models\\regitro_eleitoral.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\models\\visto_permanencia.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\atualizacao_b_i.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\atualizacao_endereco.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\certidao_casamento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\certidao_nascimento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\certidao_obito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\declaracao_residencia.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\emissao_bi_route.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\emissao_b_i.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\emissao_passaporte.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\regitro_eleitoral.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\visto_permanencia.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\services\\event_handlers.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\utils\\permission_checker.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\utils\\route_analyzer.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\utils\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\citizenship\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\abertura_processo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\alvara_comercial.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\certificacao_origem.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\contrato_publico.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\fiscalizacao_mercado.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\inspecao_sanitaria.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\licenca_importacao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\licenca_industrial.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\registo_empresa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\registo_marca.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\taxa_comercial.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\models\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\abertura_processo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\alvara_comercial.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\certificacao_origem.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\contrato_publico.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\fiscalizacao_mercado.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\inspecao_sanitaria.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\licenca_importacao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\licenca_industrial.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\registo_empresa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\registo_marca.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\taxa_comercial.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\services\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\commercial\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\models\\cache_distribuido.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\models\\configuracao_global.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\models\\log_sistema.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\models\\validador_formulario.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\routes\\cache_distribuido.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\routes\\configuracao_global.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\routes\\log_sistema.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\routes\\validador_formulario.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\common\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\routes\\corrupcao_administrativa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\routes\\denuncia_ambiental.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\routes\\denuncia_cidada.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\routes\\fiscalizacao_obra.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\routes\\irregularidade_fiscal.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\routes\\mau_atendimento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\routes\\ouvidoria_municipal.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\routes\\reclamacao_servico.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\routes\\sugestao_melhoria.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\routes\\violacao_direitos.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\complaints\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\models\\assinatura_digital.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\models\\gerador_documento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\models\\template_documento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\routes\\assinatura_digital.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\routes\\gerador_documento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\routes\\template_documento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\schemas\\assinatura_digital.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\schemas\\gerador_documento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\schemas\\template_documento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\schemas\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\services\\document_service.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\documents\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\models\\alfabetizacao_adulto.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\models\\bolsa_estudo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\models\\curso_tecnico.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\models\\educacao_especial.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\models\\ensino_superior.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\models\\historico_escolar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\models\\matricula_escolar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\models\\merenda_escolar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\models\\transferencia_escolar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\models\\transporte_escolar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\routes\\alfabetizacao_adulto.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\routes\\bolsa_estudo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\routes\\curso_tecnico.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\routes\\educacao_especial.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\routes\\ensino_superior.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\routes\\historico_escolar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\routes\\matricula_escolar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\routes\\merenda_escolar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\routes\\transferencia_escolar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\routes\\transporte_escolar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\education\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\apoio_empreendedor.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\consulta_debito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\contabilidade_publica.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\declaracao_impostos.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\emissao_recibo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\isencao_taxa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\micro_credito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\pagamento_taxa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\parcelamento_debito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\payment.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\subsidio_habitacao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\transaction.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\routes\\apoio_empreendedor.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\routes\\consulta_debito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\routes\\contabilidade_publica.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\routes\\declaracao_impostos.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\routes\\emissao_recibo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\routes\\isencao_taxa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\routes\\micro_credito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\routes\\pagamento_taxa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\routes\\parcelamento_debito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\routes\\subsidio_habitacao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\schemas\\apoio_empreendedor.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\schemas\\consulta_debito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\schemas\\contabilidade_publica.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\schemas\\declaracao_impostos.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\schemas\\emissao_recibo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\schemas\\isencao_taxa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\schemas\\micro_credito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\schemas\\pagamento_taxa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\schemas\\parcelamento_debito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\schemas\\subsidio_habitacao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\schemas\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\services\\payment.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\finance\\utils\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\models\\auditoria_log.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\models\\audit_log.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\models\\controle_versao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\models\\gestao_risco.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\models\\politica_seguranca.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\routes\\auditoria_log.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\routes\\controle_versao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\routes\\gestao_risco.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\routes\\politica_seguranca.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\schemas\\auditoria_log.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\schemas\\controle_versao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\schemas\\gestao_risco.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\schemas\\politica_seguranca.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\schemas\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\governance\\utils\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\health_services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\agendamento_consulta.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\agendamento_teleconsulta.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\agendamento_vacinacao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\avaliacao_nutricional.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\cartao_vacina.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\consulta_telematica.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\emergencia_medica.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\historico_medico.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\seguro_saude.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\solicitacao_exame.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\solicitacao_medicamento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\agendamento_consulta.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\agendamento_teleconsulta.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\agendamento_vacinacao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\avaliacao_nutricional.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\cartao_vacina.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\consulta_telematica.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\emergencia_medica.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\historico_medico.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\seguro_saude.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\solicitacao_exame.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\solicitacao_medicamento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\health\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\identity\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\adapters\\bna_adapter.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\adapters\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\examples\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\models\\a_p_i_gateway.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\models\\conector_externo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\models\\integration_event.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\models\\sincronizacao_b_n_a.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\models\\transformacao_dados.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\routes\\a_p_i_gateway.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\routes\\conector_externo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\routes\\event_routes.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\routes\\sincronizacao_b_n_a.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\routes\\transformacao_dados.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\schemas\\a_p_i_gateway.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\schemas\\conector_externo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\schemas\\event_schemas.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\schemas\\sincronizacao_b_n_a.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\schemas\\transformacao_dados.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\schemas\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\services\\event_service.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\tests\\test_integration_gateway.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\integration\\utils\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\internal\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\internal\\models\\manutencao_preventiva.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\internal\\models\\monitoramento_sistema.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\internal\\models\\otimizacao_performance.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\internal\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\internal\\routes\\manutencao_preventiva.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\internal\\routes\\monitoramento_sistema.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\internal\\routes\\otimizacao_performance.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\internal\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\internal\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\internal\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\journeys\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\crud.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\schemas.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\models\\assistencia_juridica.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\models\\defensor_publico.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\models\\execucao_fiscal.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\models\\habeas_corpus.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\models\\leilao_judicial.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\models\\mandado_seguranca.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\models\\mediacao_conflito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\models\\penhonha_bens.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\models\\registo_criminal.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\models\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\routes\\assistencia_juridica.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\routes\\defensor_publico.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\routes\\execucao_fiscal.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\routes\\habeas_corpus.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\routes\\leilao_judicial.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\routes\\mandado_seguranca.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\routes\\mediacao_conflito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\routes\\penhonha_bens.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\routes\\registo_criminal.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\services\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\justice\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\location\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\monitoring\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\monitoring\\routes\\health.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\monitoring\\routes\\metrics.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\monitoring\\routes\\tracing.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\monitoring\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\notification\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\payment\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\adocao_menor.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\certidao_negativa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\citizen.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\reconhecimento_paternidade.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\registo_casamento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\registo_civil.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\registo_imovel.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\registo_nascimento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\registo_obito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\retificacao_registro.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\tutela_menor.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\routes\\adocao_menor.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\routes\\certidao_negativa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\routes\\reconhecimento_paternidade.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\routes\\registo_casamento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\routes\\registo_civil.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\routes\\registo_imovel.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\routes\\registo_nascimento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\routes\\registo_obito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\routes\\retificacao_registro.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\routes\\tutela_menor.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\schemas\\adocao_menor.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\schemas\\certidao_negativa.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\schemas\\reconhecimento_paternidade.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\schemas\\registo_casamento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\schemas\\registo_civil.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\schemas\\registo_imovel.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\schemas\\registo_nascimento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\schemas\\registo_obito.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\schemas\\retificacao_registro.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\schemas\\tutela_menor.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\schemas\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\registry\\utils\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\reports\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\reports\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\reports\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\reports\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\reports\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\models\\agente_sanitario.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\models\\controle_vetores.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\models\\educacao_ambiental.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\models\\esgoto_sanitario.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\models\\limpeza_urbana.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\models\\monitoramento_ambiental.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\models\\tratamento_agua.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\routes\\agente_sanitario.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\routes\\controle_vetores.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\routes\\educacao_ambiental.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\routes\\esgoto_sanitario.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\routes\\limpeza_urbana.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\routes\\monitoramento_ambiental.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\routes\\tratamento_agua.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\sanitation\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\service_hub\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\service_hub\\tests\\test_endpoints.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\service_hub\\tests\\test_services.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\service_hub\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\models\\assistencia_mulher.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\models\\auxilio_social.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\models\\bolsa_familia.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\models\\capacitacao_profissional.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\models\\habitacao_social.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\models\\inclusao_digital.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\models\\programa_idoso.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\models\\protecao_menor.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\models\\reabilitacao_social.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\models\\seguranca_alimentar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\routes\\assistencia_mulher.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\routes\\auxilio_social.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\routes\\bolsa_familia.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\routes\\capacitacao_profissional.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\routes\\habitacao_social.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\routes\\inclusao_digital.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\routes\\programa_idoso.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\routes\\protecao_menor.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\routes\\reabilitacao_social.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\routes\\seguranca_alimentar.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\social\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\models\\analise_dados.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\models\\dashboard_executivo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\models\\metricas_uso.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\models\\relatorio_k_p_i.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\routes\\analise_dados.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\routes\\dashboard_executivo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\routes\\metricas_uso.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\routes\\relatorio_k_p_i.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\statistics\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\training\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\training\\routes\\training.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\training\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\models\\alvara_funcionamento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\models\\demolicao_edificio.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\models\\espaco_publico.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\models\\inspecao_obra.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\models\\licenca_construcao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\models\\loteamento_urbano.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\models\\ocupacao_solo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\models\\plano_urbano.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\models\\regularizacao_fundiaria.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\models\\sinalizacao_trafego.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\models\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\routes\\alvara_funcionamento.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\routes\\demolicao_edificio.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\routes\\espaco_publico.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\routes\\inspecao_obra.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\routes\\licenca_construcao.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\routes\\loteamento_urbano.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\routes\\ocupacao_solo.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\routes\\plano_urbano.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\routes\\regularizacao_fundiaria.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\routes\\sinalizacao_trafego.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": true,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\routes\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\services\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\urbanism\\tests\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\modules\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\application.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\approval_decorator.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\business_rules.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\cache.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\config.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\exceptions.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\logging.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\responses.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\scheduler.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\security.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\versioning.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\workflow.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\auth\\auth.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\auth\\auth_utils.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\auth\\enhanced_auth.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\auth\\permissions.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\auth\\security.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\auth\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\config\\settings.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\config\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\config\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\db\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\i18n\\i18n.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\i18n\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\logging\\logging_config.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\logging\\metrics.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\logging\\metrics_manager.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\logging\\observability_middleware.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\logging\\prometheus_metrics.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\logging\\structured_logging.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\logging\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\logging\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\middleware\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  },
+  {
+    "arquivo": "C:\\Users\\User5\\Music\\MEGA1\\sila\\sila-system\\backend\\app\\core\\__pycache__\\__init__.py",
+    "modificado": false,
+    "imports_adicionados": [],
+    "correcoes": [],
+    "erro_sintaxe": false,
+    "faltando_tablename": false
+  }
+]

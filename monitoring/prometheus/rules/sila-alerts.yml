@@ -1,0 +1,160 @@
+groups:
+  - name: sila_system_alerts
+    rules:
+      # High Error Rate Alert
+      - alert: HighErrorRate
+        expr: rate(sila_requests_total{status_code=~"5.."}[5m]) / rate(sila_requests_total[5m]) > 0.05
+        for: 2m
+        labels:
+          severity: critical
+          service: sila-system
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is {{ $value | humanizePercentage }} for service {{ $labels.endpoint }}"
+          
+      # High Response Time Alert  
+      - alert: HighResponseTime
+        expr: histogram_quantile(0.95, rate(sila_request_duration_seconds_bucket[5m])) > 2
+        for: 3m
+        labels:
+          severity: warning
+          service: sila-system
+        annotations:
+          summary: "High response time detected"
+          description: "95th percentile response time is {{ $value }}s for {{ $labels.endpoint }}"
+          
+      # Service Down Alert
+      - alert: ServiceDown
+        expr: up{job="sila-system"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          service: sila-system
+        annotations:
+          summary: "SILA System is down"
+          description: "SILA System has been down for more than 1 minute"
+          
+      # High CPU Usage
+      - alert: HighCPUUsage
+        expr: sila_system_cpu_usage_percent > 80
+        for: 5m
+        labels:
+          severity: warning
+          service: sila-system
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is {{ $value }}% for more than 5 minutes"
+          
+      # High Memory Usage
+      - alert: HighMemoryUsage
+        expr: (sila_system_memory_usage_bytes{type="used"} / sila_system_memory_usage_bytes{type="total"}) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+          service: sila-system
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage is {{ $value }}% for more than 5 minutes"
+          
+      # Database Connection Issues
+      - alert: DatabaseConnectionHigh
+        expr: sila_database_connections{status="active"} > 80
+        for: 2m
+        labels:
+          severity: warning
+          service: database
+        annotations:
+          summary: "High number of database connections"
+          description: "Active database connections: {{ $value }}"
+          
+      # Low Cache Hit Rate
+      - alert: LowCacheHitRate
+        expr: rate(sila_cache_hits_total{result="hit"}[5m]) / rate(sila_cache_hits_total[5m]) < 0.8
+        for: 10m
+        labels:
+          severity: warning
+          service: cache
+        annotations:
+          summary: "Low cache hit rate"
+          description: "Cache hit rate is {{ $value | humanizePercentage }}"
+
+  - name: sila_business_alerts
+    rules:
+      # Too Many Pending Approvals
+      - alert: TooManyPendingApprovals
+        expr: sum(sila_approval_requests_total{status="pending"}) > 100
+        for: 30m
+        labels:
+          severity: warning
+          service: approval-workflow
+        annotations:
+          summary: "High number of pending approvals"
+          description: "There are {{ $value }} pending approvals"
+          
+      # Service Usage Spike
+      - alert: ServiceUsageSpike
+        expr: rate(sila_service_usage_total[5m]) > rate(sila_service_usage_total[1h]) * 3
+        for: 5m
+        labels:
+          severity: info
+          service: sila-system
+        annotations:
+          summary: "Service usage spike detected"
+          description: "Service usage has spiked for {{ $labels.service_name }}"
+          
+      # Batch Operation Failures
+      - alert: BatchOperationFailures
+        expr: rate(sila_batch_operations_total{status="failed"}[10m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          service: batch-operations
+        annotations:
+          summary: "Batch operation failures detected"
+          description: "Batch operations are failing for module {{ $labels.module }}"
+          
+      # Journey Completion Rate Low
+      - alert: LowJourneyCompletionRate
+        expr: (rate(sila_journey_completion_total{status="completed"}[1h]) / rate(sila_journey_completion_total[1h])) < 0.8
+        for: 15m
+        labels:
+          severity: warning
+          service: journeys
+        annotations:
+          summary: "Low journey completion rate"
+          description: "Journey completion rate is {{ $value | humanizePercentage }}"
+
+  - name: sila_infrastructure_alerts
+    rules:
+      # Disk Space Low
+      - alert: DiskSpaceLow
+        expr: (sila_system_disk_usage_bytes{type="free"} / sila_system_disk_usage_bytes{type="total"}) * 100 < 15
+        for: 5m
+        labels:
+          severity: warning
+          service: system
+        annotations:
+          summary: "Low disk space"
+          description: "Free disk space is {{ $value }}%"
+          
+      # Too Many Active Users
+      - alert: TooManyActiveUsers
+        expr: sila_active_users > 1000
+        for: 10m
+        labels:
+          severity: info
+          service: sila-system
+        annotations:
+          summary: "High number of active users"
+          description: "{{ $value }} users are currently active"
+          
+      # Prometheus Target Down
+      - alert: PrometheusTargetDown
+        expr: up == 0
+        for: 2m
+        labels:
+          severity: critical
+          service: monitoring
+        annotations:
+          summary: "Prometheus target down"
+          description: "Target {{ $labels.instance }} of job {{ $labels.job }} has been down for more than 2 minutes"

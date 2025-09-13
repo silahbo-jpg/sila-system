@@ -1,0 +1,9 @@
+Module,Service,Description
+citizenship,EmissaoBI,Emissão de Bilhete de Identidade
+citizenship,AtualizacaoEndereco,Atualização de Endereço
+health,AgendamentoConsulta,Agendamento de Consulta Médica
+health,SolicitacaoExame,Solicitação de Exame Laboratorial
+education,MatriculaEscolar,Matrícula Escolar
+commercial,AberturaProcesso,Abertura de Processo Comercial
+urbanism,LicencaConstrucao,Licença de Construção
+

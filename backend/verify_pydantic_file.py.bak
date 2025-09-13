@@ -1,0 +1,93 @@
+from datetime import date, datetime
+from typing import Optional, List
+from pydantic import BaseModel, Field, EmailStr, field_validator
+from enum import Enum
+
+
+class DocumentType(str, Enum):
+    BILHETE_IDENTIDADE = "Bilhete de Identidade"
+    CARTAO_CIDADAO = "Cartão de Cidadão"
+    PASSAPORTE = "Passaporte"
+    OUTRO = "Outro"
+
+
+class EstadoCivil(str, Enum):
+    SOLTEIRO = "Solteiro(a)"
+    CASADO = "Casado(a)"
+    DIVORCIADO = "Divorciado(a)"
+    VIUVO = "Viúvo(a)"
+    UNIAO_DE_FACTO = "Em União de Facto"
+    SEPARADO = "Separado(a)"
+
+
+class Genero(str, Enum):
+    MASCULINO = "Masculino"
+    FEMININO = "Feminino"
+    OUTRO = "Outro"
+    NAO_ESPECIFICADO = "Prefiro não dizer"
+
+
+class AtualizacaoBICreate(BaseModel):
+    """Schema para criação de um novo pedido de atualização de BI"""
+    numero_documento: str = Field(..., description="Número do documento de identificação")
+    tipo_documento: DocumentType = Field(..., description="Tipo de documento a ser atualizado")
+    nome_completo: str = Field(..., min_length=3, max_length=100, description="Nome completo do cidadão")
+    nome_mae: str = Field(..., min_length=3, max_length=100, description="Nome completo da mãe")
+    nome_pai: Optional[str] = Field(None, min_length=3, max_length=100, description="Nome completo do pai")
+    data_nascimento: date = Field(..., description="Data de nascimento (YYYY-MM-DD)")
+    naturalidade: str = Field(..., description="Naturalidade")
+    nacionalidade: str = Field(..., description="Nacionalidade")
+    estado_civil: EstadoCivil = Field(..., description="Estado civil")
+    genero: Genero = Field(..., description="Gênero")
+    altura: float = Field(..., gt=0, description="Altura em metros")
+    morada: str = Field(..., description="Morada completa")
+    codigo_postal: str = Field(..., description="Código postal")
+    localidade: str = Field(..., description="Localidade")
+    telefone: str = Field(..., description="Número de telefone")
+    email: EmailStr = Field(..., description="Endereço de email")
+    motivo_atualizacao: str = Field(..., description="Motivo da atualização")
+
+    @field_validator('data_nascimento')
+    def validar_data_nascimento(cls, v: date) -> date:
+        if v > date.today():
+            raise ValueError('A data de nascimento não pode ser no futuro')
+        return v
+
+
+class AtualizacaoBIRead(AtualizacaoBICreate):
+    """Schema para leitura de um pedido de atualização de BI"""
+    id: int
+    data_submissao: datetime
+    estado: str = "Pendente"
+    numero_processo: Optional[str] = None
+
+    model_config = {
+        "from_attributes": True
+    }
+
+
+class AtualizacaoBIUpdate(BaseModel):
+    """Schema para atualização de um pedido de atualização de BI"""
+    estado: Optional[str] = None
+    numero_processo: Optional[str] = None
+    observacoes: Optional[str] = Field(None, description="Observações adicionais")
+
+    model_config = {
+        "json_schema_extra": {
+            "example": {
+                "estado": "Em processamento",
+                "numero_processo": "AT/2023/12345",
+                "observacoes": "Documentação em análise"
+            }
+        }
+    }
+
+
+class AtualizacaoBIList(BaseModel):
+    """Schema para listagem de pedidos de atualização de BI"""
+    items: List[AtualizacaoBIRead]
+    total: int
+
+    model_config = {
+        "from_attributes": True
+    }

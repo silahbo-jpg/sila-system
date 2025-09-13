@@ -1,0 +1,18 @@
+
+services:
+  frontend:
+    build:
+      context: ./frontend/webapp
+      dockerfile: Dockerfile
+    container_name: sila-frontend-dev
+    command: npm run dev
+    working_dir: /app
+    volumes:
+      - ./frontend/webapp:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    depends_on:
+      - backend

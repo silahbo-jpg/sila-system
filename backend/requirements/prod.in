@@ -1,0 +1,16 @@
+-r base.in
+
+gunicorn>=20.1.0
+uvicorn[standard]>=0.21.0
+
+# Monitoring
+sentry-sdk[fastapi]>=1.25.0
+prometheus-fastapi-instrumentator>=6.1.0
+
+# Performance
+uvloop>=0.17.0
+httptools>=0.5.0
+
+# Security
+python-dotenv>=1.0.0
+

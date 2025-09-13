@@ -1,0 +1,7 @@
+[2025-08-19 02:52:58.821500] ✅ C:\Users\User5\Music\MEGA1\sila\postgres\scripts\.env: DATABASE_URL=postgresql://devuser:Truman1_Marcelo1_1985@localhost:5432/sila_db → DATABASE_URL="postgresql://devuser:Truman1_Marcelo1_1985@localhost:5432/sila_db?schema=public"
+[2025-08-19 02:52:58.823498] ✅ C:\Users\User5\Music\MEGA1\sila\postgres\scripts\.env.example: POSTGRES_USER=__USUARIO_DO_BANCO__ → POSTGRES_USER="devuser"
+[2025-08-19 02:52:58.823498] ✅ C:\Users\User5\Music\MEGA1\sila\postgres\scripts\.env.example: POSTGRES_PASSWORD=__SENHA_DO_BANCO__ → POSTGRES_PASSWORD="Truman1_Marcelo1_1985"
+[2025-08-19 02:52:58.823498] ✅ C:\Users\User5\Music\MEGA1\sila\postgres\scripts\.env.example: DATABASE_URL=postgresql://__USUARIO__:__SENHA__@localhost:5432/__BANCO__ → DATABASE_URL="postgresql://devuser:Truman1_Marcelo1_1985@localhost:5432/sila_db?schema=public"
+[2025-08-19 02:52:58.837525] ✅ C:\Users\User5\Music\MEGA1\sila\postgres\scripts\backend\.env.example: DATABASE_URL=postgresql://user:password@localhost:5432/sila_db → DATABASE_URL="postgresql://devuser:Truman1_Marcelo1_1985@localhost:5432/sila_db?schema=public"
+[2025-08-19 02:52:58.840113] ✅ C:\Users\User5\Music\MEGA1\sila\postgres\scripts\backups\standardize_20250817_075359\.env: DATABASE_URL=postgresql://postgres:postgres@localhost:5432/sila → DATABASE_URL="postgresql://devuser:Truman1_Marcelo1_1985@localhost:5432/sila_db?schema=public"
+[2025-08-19 02:52:58.840113] ✅ C:\Users\User5\Music\MEGA1\sila\postgres\scripts\backups\standardize_20250817_075359\.env: POSTGRES_USER=postgres → POSTGRES_USER="devuser"

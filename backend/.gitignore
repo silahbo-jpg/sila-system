@@ -1,0 +1,37 @@
+# Backend specific ignores
+
+# Generated files
+/app/generated/
+
+# Local development
+local_settings.py
+override.ini
+
+# Database files (already in root .gitignore, but being explicit here)
+*.db
+*.sqlite3
+*.log
+
+# Keep Alembic migrations
+!alembic/versions/
+
+# Keep Prisma migrations (except dev DB which is handled in root)
+prisma/*.db
+!prisma/dev.db
+prisma/migrations/
+!prisma/migrations/migration_lock.toml
+
+# Local test data
+test_data/
+*.testdb
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+logs/
+htmlcov/
+.coverage*
+db.sqlite3
+.pytest_cache/

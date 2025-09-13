@@ -1,0 +1,278 @@
+version: '3.8'
+
+services:
+  # SILA Backend Application
+  sila-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: sila/backend:latest
+    container_name: sila-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:${POSTGRES_PASSWORD}@sila-db:5432/sila
+      - SECRET_KEY=${SECRET_KEY}
+      - ENVIRONMENT=production
+      - REDIS_URL=redis://sila-redis:6379/0
+      - CELERY_BROKER_URL=redis://sila-redis:6379/1
+      - MINIO_ENDPOINT=sila-minio:9000
+      - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY}
+      - MINIO_SECRET_KEY=${MINIO_SECRET_KEY}
+      - JAEGER_ENDPOINT=http://sila-jaeger:14268
+      - PROMETHEUS_GATEWAY=sila-prometheus:9090
+    volumes:
+      - sila-uploads:/app/uploads
+      - sila-logs:/app/logs
+      - ./backend/app:/app/app:ro
+    depends_on:
+      - sila-db
+      - sila-redis
+      - sila-minio
+    networks:
+      - sila-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/monitoring/health/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+  # SILA Frontend Application
+  sila-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: sila/frontend:latest
+    container_name: sila-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+      - REACT_APP_ENVIRONMENT=production
+      - REACT_APP_SENTRY_DSN=${SENTRY_DSN}
+    volumes:
+      - ./frontend/src:/app/src:ro
+      - ./frontend/public:/app/public:ro
+    depends_on:
+      - sila-backend
+    networks:
+      - sila-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # PostgreSQL Database
+  sila-db:
+    image: postgres:15-alpine
+    container_name: sila-db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=sila
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8 --lc-collate=C --lc-ctype=C
+    volumes:
+      - sila-db-data:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql:ro
+      - sila-db-backups:/backups
+    networks:
+      - sila-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+        reservations:
+          cpus: '0.2'
+          memory: 256M
+
+  # Redis for Caching and Sessions
+  sila-redis:
+    image: redis:7-alpine
+    container_name: sila-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - sila-redis-data:/data
+    networks:
+      - sila-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped
+
+  # MinIO for File Storage
+  sila-minio:
+    image: minio/minio:latest
+    container_name: sila-minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ACCESS_KEY}
+      - MINIO_ROOT_PASSWORD=${MINIO_SECRET_KEY}
+    command: server /data --console-address ":9001"
+    volumes:
+      - sila-minio-data:/data
+    networks:
+      - sila-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+    restart: unless-stopped
+
+  # Celery Worker for Background Tasks
+  sila-worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.worker
+    image: sila/worker:latest
+    container_name: sila-worker
+    environment:
+      - DATABASE_URL=postgresql://postgres:${POSTGRES_PASSWORD}@sila-db:5432/sila
+      - CELERY_BROKER_URL=redis://sila-redis:6379/1
+      - CELERY_RESULT_BACKEND=redis://sila-redis:6379/2
+    volumes:
+      - sila-uploads:/app/uploads
+      - sila-logs:/app/logs
+    depends_on:
+      - sila-db
+      - sila-redis
+    networks:
+      - sila-network
+    restart: unless-stopped
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+
+  # Nginx Reverse Proxy
+  sila-nginx:
+    image: nginx:alpine
+    container_name: sila-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./devops/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./devops/nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./devops/ssl:/etc/nginx/ssl:ro
+      - sila-static:/var/www/static:ro
+    depends_on:
+      - sila-backend
+      - sila-frontend
+    networks:
+      - sila-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # Monitoring Stack (from previous implementation)
+  prometheus:
+    image: prom/prometheus:v2.40.0
+    container_name: sila-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/prometheus/rules:/etc/prometheus/rules:ro
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=30d'
+      - '--web.enable-lifecycle'
+    networks:
+      - sila-network
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:9.3.0
+    container_name: sila-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_SERVER_ROOT_URL=http://localhost:3001
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    networks:
+      - sila-network
+    restart: unless-stopped
+    depends_on:
+      - prometheus
+
+  jaeger:
+    image: jaegertracing/all-in-one:1.42
+    container_name: sila-jaeger
+    ports:
+      - "16686:16686"
+      - "14268:14268"
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+    networks:
+      - sila-network
+    restart: unless-stopped
+
+volumes:
+  sila-db-data:
+    driver: local
+  sila-db-backups:
+    driver: local
+  sila-redis-data:
+    driver: local
+  sila-minio-data:
+    driver: local
+  sila-uploads:
+    driver: local
+  sila-logs:
+    driver: local
+  sila-static:
+    driver: local
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local
+
+networks:
+  sila-network:
+    driver: bridge
+    name: sila-network
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

@@ -1,0 +1,142 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "SILA Service Performance",
+    "tags": ["sila", "performance", "services"],
+    "style": "dark",
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Average Response Time by Service",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(sila_request_duration_seconds_bucket[5m]))",
+            "legendFormat": "95th percentile - {{endpoint}}"
+          },
+          {
+            "expr": "histogram_quantile(0.50, rate(sila_request_duration_seconds_bucket[5m]))",
+            "legendFormat": "50th percentile - {{endpoint}}"
+          }
+        ],
+        "yAxes": [
+          {
+            "unit": "s",
+            "min": 0
+          }
+        ],
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Service Success Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "(sum(rate(sila_requests_total{status_code=~\"2..\"}[5m])) by (endpoint) / sum(rate(sila_requests_total[5m])) by (endpoint)) * 100",
+            "legendFormat": "Success Rate - {{endpoint}}"
+          }
+        ],
+        "yAxes": [
+          {
+            "unit": "percent",
+            "min": 90,
+            "max": 100
+          }
+        ],
+        "thresholds": [
+          {
+            "value": 95,
+            "colorMode": "critical",
+            "op": "lt"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8}
+      },
+      {
+        "id": 3,
+        "title": "Requests per Minute by Module",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "sum(rate(sila_requests_total[1m]) * 60) by (module)",
+            "legendFormat": "{{module}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "Top Slowest Services",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "topk(10, histogram_quantile(0.95, rate(sila_request_duration_seconds_bucket[5m])))",
+            "legendFormat": "{{endpoint}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 16}
+      },
+      {
+        "id": 5,
+        "title": "Error Distribution",
+        "type": "piechart",
+        "targets": [
+          {
+            "expr": "sum by (status_code) (sila_requests_total{status_code=~\"4..|5..\"})",
+            "legendFormat": "HTTP {{status_code}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 16}
+      },
+      {
+        "id": 6,
+        "title": "Request Size vs Response Time",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "sila_request_size_bytes",
+            "legendFormat": "Request Size"
+          },
+          {
+            "expr": "sila_response_size_bytes",
+            "legendFormat": "Response Size"
+          }
+        ],
+        "yAxes": [
+          {
+            "unit": "bytes",
+            "logBase": 2
+          }
+        ],
+        "gridPos": {"h": 6, "w": 24, "x": 0, "y": 24}
+      }
+    ],
+    "templating": {
+      "list": [
+        {
+          "name": "module",
+          "type": "query",
+          "query": "label_values(sila_requests_total, module)",
+          "refresh": 1,
+          "multi": true,
+          "includeAll": true
+        },
+        {
+          "name": "service",
+          "type": "query",
+          "query": "label_values(sila_requests_total{module=~\"$module\"}, endpoint)",
+          "refresh": 1,
+          "multi": true,
+          "includeAll": true
+        }
+      ]
+    },
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "refresh": "30s"
+  }
+}

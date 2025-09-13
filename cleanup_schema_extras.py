@@ -1,0 +1,210 @@
+#!/usr/bin/env python3
+"""
+Script to clean up schema_extra/json_schema_extra usage in Pydantic models.
+
+This script will:
+1. Find all Python files in the project
+2. Update field definitions to use the correct format for json_schema_extra
+3. Handle different variations of schema_extra usage
+4. Create backups of modified files
+"""
+
+import ast
+import os
+from pathlib import Path
+import re
+import shutil
+from typing import Dict, List, Optional, Tuple, Union
+
+# Define the project root directory
+PROJECT_ROOT = Path(__file__).parent.absolute()
+
+# Define patterns to identify Pydantic field definitions
+FIELD_PATTERN = re.compile(
+    r'(\w+)\s*:\s*(?:Optional\[.*?\]|\w+)\s*=\s*Field\s*\(([^)]*)\)',
+    re.DOTALL
+)
+
+# Patterns for schema_extra/json_schema_extra
+SCHEMA_EXTRA_PATTERN = re.compile(
+    r'(?:json_)?schema_extra\s*=\s*(\{[^}]*\}|\w+)',
+    re.DOTALL
+)
+
+# Files to exclude (virtual environments, etc.)
+EXCLUDE_DIRS = {
+    '.venv', 'venv', 'env', '.git', '__pycache__', '.mypy_cache',
+    '.pytest_cache', 'node_modules', 'dist', 'build', '*.egg-info',
+    'migrations', 'alembic', 'tests', 'test', 'scripts'
+}
+
+# File extensions to process
+PYTHON_EXTENSIONS = {'.py'}
+
+def is_excluded(path: Path) -> bool:
+    """Check if a path should be excluded from processing."""
+    # Check if any part of the path is in EXCLUDE_DIRS
+    parts = path.parts
+    return any(part in EXCLUDE_DIRS for part in parts)
+
+def find_python_files(directory: Path) -> List[Path]:
+    """Find all Python files in the given directory, excluding excluded paths."""
+    python_files = []
+    
+    for root, dirs, files in os.walk(directory):
+        # Skip excluded directories
+        dirs[:] = [d for d in dirs if not is_excluded(Path(root) / d)]
+        
+        for file in files:
+            if file.endswith('.py'):
+                file_path = Path(root) / file
+                if not is_excluded(file_path):
+                    python_files.append(file_path)
+    
+    return python_files
+
+def parse_field_arguments(field_args: str) -> Dict[str, str]:
+    """Parse the arguments of a Field() call into a dictionary."""
+    try:
+        # Create a dummy function to safely evaluate the arguments
+        def Field(*args, **kwargs):
+            return kwargs
+        
+        # Create a safe environment for eval
+        safe_globals = {
+            'Field': Field,
+            'Optional': Optional,
+            'Union': Union,
+            'List': List,
+            'Dict': Dict,
+            'Tuple': Tuple,
+        }
+        
+        # Evaluate the field arguments
+        field_kwargs = eval(f'Field({field_args})', safe_globals, {})
+        
+        # Convert all values to strings for consistent handling
+        return {k: str(v) for k, v in field_kwargs.items()}
+    except Exception as e:
+        print(f"  Warning: Could not parse field arguments: {e}")
+        return {}
+
+def update_field_definition(match: re.Match) -> str:
+    """Update a single field definition to use the correct schema_extra format.
+    
+    This function handles the conversion of schema_extra to json_schema_extra
+    while preserving the original formatting and comments.
+    """
+    original = match.group(0)
+    field_name = match.group(1)
+    field_args = match.group(2).strip()
+    
+    # Skip if no arguments or if the line looks corrupted
+    if not field_args or '=Field(' in field_args or '= Field(' in field_args:
+        return original
+    
+    try:
+        # Parse the field arguments
+        field_kwargs = parse_field_arguments(field_args)
+        
+        # Check if schema_extra or json_schema_extra exists
+        schema_extra = None
+        if 'schema_extra' in field_kwargs:
+            schema_extra = field_kwargs.pop('schema_extra')
+        elif 'json_schema_extra' in field_kwargs:
+            # Already using json_schema_extra, no changes needed
+            return original
+        
+        # If no schema_extra found, return as is
+        if schema_extra is None:
+            return original
+        
+        # Rebuild the field definition with updated schema_extra
+        updated_args = []
+        
+        # Add json_schema_extra
+        if schema_extra.startswith('{') and schema_extra.endswith('}'):
+            # Replace schema_extra with json_schema_extra in the original string
+            updated = original.replace('json_schema_extra=', 'json_json_schema_extra=')
+            return updated
+        else:
+            print(f"  Warning: Non-dict schema_extra found in {field_name}: {schema_extra}")
+            return original
+            
+    except Exception as e:
+        print(f"  Warning: Could not process field {field_name}: {e}")
+        return original
+
+def process_file(file_path: Path) -> bool:
+    """Process a single Python file to update schema_extra usage."""
+    print(f"Processing: {file_path}")
+    
+    try:
+        # Read the file content
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Skip if no schema_extra in the file (we're only converting schema_extra to json_schema_extra)
+        if 'schema_extra' not in content:
+            return False
+        
+        # Skip files that are likely to cause issues
+        if any(bad in str(file_path) for bad in ['venv', '.venv', 'env', '__pycache__', '.git']):
+            return False
+            
+        # Make a backup of the original file if one doesn't exist
+        backup_path = file_path.with_suffix(f'{file_path.suffix}.bak')
+        if not backup_path.exists():
+            shutil.copy2(file_path, backup_path)
+        
+        # Process the content line by line to be more careful
+        lines = content.splitlines()
+        modified = False
+        
+        for i, line in enumerate(lines):
+            if 'json_schema_extra=' in line and 'json_schema_extra' not in line:
+                # Simple replacement for most cases
+                new_line = line.replace('json_schema_extra=', 'json_json_schema_extra=')
+                if new_line != line:
+                    lines[i] = new_line
+                    modified = True
+        
+        # Only write if changes were made
+        if modified:
+            updated_content = '\n'.join(lines)
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(updated_content)
+            print(f"  Updated: {file_path}")
+            return True
+            
+        return False
+    
+    except Exception as e:
+        print(f"  Error processing {file_path}: {e}")
+        # Restore from backup if there was an error
+        if 'backup_path' in locals() and backup_path.exists():
+            shutil.copy2(backup_path, file_path)
+            print(f"  Restored {file_path} from backup due to error")
+        return False
+
+def main():
+    """Main function to run the script."""
+    print(f"Starting cleanup of schema_extra/json_schema_extra in {PROJECT_ROOT}")
+    
+    # Find all Python files in the project
+    python_files = find_python_files(PROJECT_ROOT)
+    print(f"Found {len(python_files)} Python files to process")
+    
+    # Process each file
+    updated_files = 0
+    for file_path in python_files:
+        if process_file(file_path):
+            updated_files += 1
+    
+    print(f"\nCleanup complete!")
+    print(f"- Files processed: {len(python_files)}")
+    print(f"- Files updated: {updated_files}")
+    print(f"- Backups created with .bak extension")
+
+if __name__ == "__main__":
+    main()

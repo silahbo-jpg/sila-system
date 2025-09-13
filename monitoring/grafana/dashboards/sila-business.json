@@ -1,0 +1,200 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "SILA Business Metrics",
+    "tags": ["sila", "business", "citizen-services"],
+    "style": "dark",
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Services Usage by Municipality",
+        "type": "worldmap",
+        "targets": [
+          {
+            "expr": "sum by (municipality) (sila_service_usage_total)",
+            "legendFormat": "{{municipality}}"
+          }
+        ],
+        "gridPos": {"h": 10, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Top Services by Usage",
+        "type": "bargauge",
+        "targets": [
+          {
+            "expr": "topk(10, sum by (service_name) (sila_service_usage_total))",
+            "legendFormat": "{{service_name}}"
+          }
+        ],
+        "gridPos": {"h": 10, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "Citizen vs Administrative Services",
+        "type": "piechart",
+        "targets": [
+          {
+            "expr": "sum by (user_type) (sila_service_usage_total)",
+            "legendFormat": "{{user_type}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 8, "x": 0, "y": 10}
+      },
+      {
+        "id": 4,
+        "title": "Service Completion Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "(sum(sila_journey_completion_total{status=\"completed\"}) / sum(sila_journey_completion_total)) * 100",
+            "legendFormat": "Completion Rate"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 70},
+                {"color": "green", "value": 85}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 4, "w": 8, "x": 8, "y": 10}
+      },
+      {
+        "id": 5,
+        "title": "Average Service Time",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "avg(sila_request_duration_seconds)",
+            "legendFormat": "Avg Time"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "s"
+          }
+        },
+        "gridPos": {"h": 4, "w": 8, "x": 16, "y": 10}
+      },
+      {
+        "id": 6,
+        "title": "Approval Workflow Status",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "sum by (status) (sila_approval_requests_total)",
+            "legendFormat": "{{status}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 8, "x": 8, "y": 14}
+      },
+      {
+        "id": 7,
+        "title": "Services Usage Over Time",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "sum(rate(sila_service_usage_total[1h]))",
+            "legendFormat": "Usage Rate"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 16, "x": 0, "y": 18}
+      },
+      {
+        "id": 8,
+        "title": "Peak Hours Analysis",
+        "type": "heatmap",
+        "targets": [
+          {
+            "expr": "sum by (hour) (increase(sila_service_usage_total[1h]))",
+            "legendFormat": "Hour {{hour}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 8, "x": 16, "y": 18}
+      },
+      {
+        "id": 9,
+        "title": "Module Performance Comparison",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "sum by (module) (sila_service_usage_total)",
+            "legendFormat": "Usage"
+          },
+          {
+            "expr": "avg by (module) (sila_request_duration_seconds)",
+            "legendFormat": "Avg Response Time"
+          },
+          {
+            "expr": "(sum by (module) (rate(sila_requests_total{status_code=~\"2..\"}[5m])) / sum by (module) (rate(sila_requests_total[5m]))) * 100",
+            "legendFormat": "Success Rate %"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 26}
+      },
+      {
+        "id": 10,
+        "title": "Batch Operations Summary",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "sum by (operation_type, status) (sila_batch_operations_total)",
+            "legendFormat": "{{operation_type}} - {{status}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 26}
+      },
+      {
+        "id": 11,
+        "title": "User Engagement Metrics",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "sila_active_users",
+            "legendFormat": "Active Users"
+          },
+          {
+            "expr": "sum(rate(sila_service_usage_total[5m]) * 300)",
+            "legendFormat": "Services per 5min"
+          }
+        ],
+        "gridPos": {"h": 6, "w": 24, "x": 0, "y": 34}
+      }
+    ],
+    "templating": {
+      "list": [
+        {
+          "name": "municipality",
+          "type": "query",
+          "query": "label_values(sila_service_usage_total, municipality)",
+          "refresh": 1,
+          "multi": true,
+          "includeAll": true
+        },
+        {
+          "name": "time_range",
+          "type": "custom",
+          "options": [
+            {"text": "Last Hour", "value": "1h"},
+            {"text": "Last 6 Hours", "value": "6h"},
+            {"text": "Last 24 Hours", "value": "24h"},
+            {"text": "Last 7 Days", "value": "7d"}
+          ],
+          "current": {"value": "1h"}
+        }
+      ]
+    },
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "refresh": "1m"
+  }
+}

@@ -1,0 +1,12 @@
+alembic
+app
+docs
+integration
+logs
+observability
+reports
+requirements
+scripts
+static
+test_venv
+venv

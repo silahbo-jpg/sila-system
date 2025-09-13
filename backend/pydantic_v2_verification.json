@@ -1,0 +1,39 @@
+{
+  "tests": [
+    {
+      "test": "AtualizacaoBICreate",
+      "success": true,
+      "error": null,
+      "data": {
+        "nome_completo": "Test User",
+        "data_nascimento": "2000-01-01",
+        "estado_civil": "Solteiro(a)",
+        "genero": "Masculino"
+      }
+    },
+    {
+      "test": "EmissaoBIBase",
+      "success": true,
+      "error": null,
+      "data": {
+        "nome_completo": "Test User",
+        "data_nascimento": "2000-01-01"
+      }
+    },
+    {
+      "test": "EmissaoPassaporteBase",
+      "success": true,
+      "error": null,
+      "data": {
+        "nome_completo": "Test User",
+        "data_nascimento": "2000-01-01"
+      }
+    }
+  ],
+  "summary": {
+    "total_tests": 3,
+    "passed": 3,
+    "failed": 0,
+    "all_passed": true
+  }
+}

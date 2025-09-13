@@ -1,0 +1,14 @@
+{
+  "login": "Entrar",
+  "dashboard": "Painel",
+  "services": "Serviços",
+  "service_catalog": "Catálogo de Serviços",
+  "access": "Acessar",
+  "logout": "Sair",
+  "search_service": "Pesquisar serviço...",
+  "category": "Categoria",
+  "all_categories": "Todas as categorias",
+  "service_list": "Lista de Serviços",
+  "no_service_found": "Nenhum serviço encontrado."
+}
+

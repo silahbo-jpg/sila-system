@@ -1,0 +1,40 @@
+2025-09-07 22:03:54,154 - postgres-api - INFO - {"timestamp": "2025-09-07T21:03:54.154629Z", "level": "info", "logger": "postgres-api", "message": "Structured logging configured", "module": "structured_logging", "function": null, "line": 60, "environment": "development", "service": "postgres-api", "version": "0.1.0", "log_level": "INFO"}
+{"timestamp": "2025-09-07T21:03:54.154629Z", "level": "info", "logger": "postgres-api", "message": "Structured logging configured", "module": "structured_logging", "function": null, "line": 60, "environment": "development", "service": "postgres-api", "version": "0.1.0", "log_level": "INFO"}
+2025-09-07 22:03:55,627 - app.core.i18n.i18n - INFO - Translation system initialized with directory: C:\Users\User5\Music\MEGA1\sila\sila-system\translations
+C:\Users\User5\AppData\Local\Programs\Python\Python311\Lib\site-packages\_pytest\config\__init__.py:331: PluggyTeardownRaisedWarning: A plugin raised an exception during an old-style hookwrapper teardown.
+Plugin: helpconfig, Hook: pytest_cmdline_parse
+ConftestImportFailure: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes' (from C:\Users\User5\Music\MEGA1\sila\sila-system\backend\tests\conftest.py)
+For more information see https://pluggy.readthedocs.io/en/stable/api_reference.html#pluggy.PluggyTeardownRaisedWarning
+  config = pluginmanager.hook.pytest_cmdline_parse(
+ImportError while loading conftest 'C:\Users\User5\Music\MEGA1\sila\sila-system\backend\tests\conftest.py'.
+tests\conftest.py:19: in <module>
+    from app.main import app
+app\main.py:11: in <module>
+    from app.core.application import app
+app\core\application.py:80: in <module>
+    app = create_application()
+app\core\application.py:52: in create_application
+    from app.api.v1.api import api_router
+app\api\v1\api.py:9: in <module>
+    from app.modules.citizenship.routes.emissao_bi_route import router as emissao_bi_router
+app\modules\citizenship\routes\__init__.py:13: in <module>
+    from .atualizacao_b_i import router as atualizacao_bi_router
+app\modules\citizenship\routes\atualizacao_b_i.py:13: in <module>
+    from app.modules.citizenship.services.atualizacao_bi_service import AtualizacaoBIService
+app\modules\citizenship\services\atualizacao_bi_service.py:8: in <module>
+    from app.modules.citizenship.schemas.atualizacao_b_i import (
+app\modules\citizenship\schemas\__init__.py:3: in <module>
+    from .atualizacao_b_i import AtualizacaoBICreate, AtualizacaoBIRead, AtualizacaoBIUpdate
+app\modules\citizenship\schemas\atualizacao_b_i.py:52: in <module>
+    class AtualizacaoBIRead(AtualizacaoBICreate):
+C:\Users\User5\AppData\Local\Programs\Python\Python311\Lib\site-packages\pydantic\_internal\_model_construction.py:110: in __new__
+    config_wrapper = ConfigWrapper.for_model(bases, namespace, kwargs)
+C:\Users\User5\AppData\Local\Programs\Python\Python311\Lib\site-packages\pydantic\_internal\_config.py:136: in for_model
+    config_from_namespace = config_dict_from_namespace or prepare_config(config_class_from_namespace)
+C:\Users\User5\AppData\Local\Programs\Python\Python311\Lib\site-packages\pydantic\_internal\_config.py:327: in prepare_config
+    check_deprecated(config_dict)
+C:\Users\User5\AppData\Local\Programs\Python\Python311\Lib\site-packages\pydantic\_internal\_config.py:373: in check_deprecated
+    warnings.warn(message, UserWarning)
+E   UserWarning: Valid config keys have changed in V2:
+E   * 'orm_mode' has been renamed to 'from_attributes'

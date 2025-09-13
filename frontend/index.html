@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO and Meta Information -->
+    <title>SILA - Sistema Integrado Local de Administração</title>
+    <meta name="description" content="Portal oficial do Sistema Integrado Local de Administração de Angola. Acesse serviços públicos digitais de forma segura e eficiente." />
+    <meta name="keywords" content="Angola, governo, serviços públicos, administração, SILA, digital, governo eletrônico" />
+    <meta name="author" content="Governo de Angola" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sila.gov.ao/" />
+    <meta property="og:title" content="SILA - Sistema Integrado Local de Administração" />
+    <meta property="og:description" content="Portal oficial do Sistema Integrado Local de Administração de Angola" />
+    <meta property="og:image" content="/og-image.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sila.gov.ao/" />
+    <meta property="twitter:title" content="SILA - Sistema Integrado Local de Administração" />
+    <meta property="twitter:description" content="Portal oficial do Sistema Integrado Local de Administração de Angola" />
+    <meta property="twitter:image" content="/twitter-image.png" />
+    
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    
+    <!-- Accessibility -->
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="color-scheme" content="light dark" />
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- Service Worker Registration (will be handled by Vite PWA) -->
+    <script>
+      // Check for saved theme preference or default to system preference
+      const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+      
+      // Set initial language
+      const language = localStorage.getItem('language') || 
+        (navigator.language.startsWith('en') ? 'en' : 'pt');
+      document.documentElement.lang = language;
+    </script>
+    
+    <!-- Skip Links for Accessibility (initially hidden) -->
+    <style>
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #2563eb;
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 0 0 4px 4px;
+        z-index: 1000;
+        transform: translateY(-100%);
+        transition: transform 0.3s;
+      }
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+      
+      /* Loading spinner */
+      .loading-spinner {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        border: 3px solid #f3f4f6;
+        border-radius: 50%;
+        border-top-color: #2563eb;
+        animation: spin 1s ease-in-out infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Skip Links for Accessibility -->
+    <a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+    <a href="#main-navigation" class="skip-link">Ir para a navegação</a>
+    
+    <!-- Screen Reader Announcements -->
+    <div id="sr-announcer" aria-live="polite" aria-atomic="true" style="position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden;"></div>
+    
+    <!-- React Root -->
+    <div id="root">
+      <!-- Fallback loading content -->
+      <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh; flex-direction: column; gap: 1rem; font-family: Inter, sans-serif;">
+        <div class="loading-spinner"></div>
+        <p style="color: #6b7280;">Carregando SILA...</p>
+        <noscript>
+          <p style="color: #dc2626; font-weight: 600;">
+            JavaScript é necessário para usar o SILA. Por favor, ative o JavaScript no seu navegador.
+          </p>
+        </noscript>
+      </div>
+    </div>
+    
+    <!-- Vite Script -->
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Error Boundary Fallback -->
+    <script>
+      window.addEventListener('error', function(e) {
+        console.error('Global error:', e.error);
+        // Could send to error tracking service
+      });
+      
+      window.addEventListener('unhandledrejection', function(e) {
+        console.error('Unhandled promise rejection:', e.reason);
+        // Could send to error tracking service
+      });
+    </script>
+  </body>
+</html>

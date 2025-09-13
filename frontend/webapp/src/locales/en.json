@@ -1,0 +1,14 @@
+{
+  "login": "Login",
+  "dashboard": "Dashboard",
+  "services": "Services",
+  "service_catalog": "Service Catalog",
+  "access": "Access",
+  "logout": "Logout",
+  "search_service": "Search service...",
+  "category": "Category",
+  "all_categories": "All categories",
+  "service_list": "Service List",
+  "no_service_found": "No service found."
+}
+

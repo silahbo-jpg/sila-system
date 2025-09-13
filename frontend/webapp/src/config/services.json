@@ -1,0 +1,183 @@
+[
+  {
+    "id": "servico-educacao-01",
+    "name": "Inscrição Escolar",
+    "category": "Educação",
+    "description": "Permite inscrever uma criança numa escola pública.",
+    "endpoint": "/api/servicos/inscricao-escolar",
+    "method": "POST",
+    "rolesAllowed": ["admin", "cidadao"]
+  },
+  {
+    "id": "servico-educacao-02",
+    "name": "Consulta de Escolas",
+    "category": "Educação",
+    "description": "Lista escolas públicas disponíveis.",
+    "endpoint": "/api/servicos/escolas",
+    "method": "GET",
+    "rolesAllowed": ["admin", "cidadao"]
+  },
+  {
+    "id": "servico-educacao-03",
+    "name": "Solicitar Transferência Escolar",
+    "category": "Educação",
+    "description": "Solicita transferência de escola para um estudante.",
+    "endpoint": "/api/servicos/transferencia-escolar",
+    "method": "POST",
+    "rolesAllowed": ["admin", "cidadao"]
+  },
+  {
+    "id": "servico-saude-01",
+    "name": "Marcação de Consulta",
+    "category": "Saúde",
+    "description": "Permite marcar uma consulta médica.",
+    "endpoint": "/api/servicos/marcacao-consulta",
+    "method": "POST",
+    "rolesAllowed": ["admin", "cidadao"]
+  },
+  {
+    "id": "servico-saude-02",
+    "name": "Consultar Consultas Marcadas",
+    "category": "Saúde",
+    "description": "Lista consultas médicas agendadas.",
+    "endpoint": "/api/servicos/consultas",
+    "method": "GET",
+    "rolesAllowed": ["admin", "cidadao", "operador"]
+  },
+  {
+    "id": "servico-saude-03",
+    "name": "Solicitar Ambulância",
+    "category": "Saúde",
+    "description": "Solicita atendimento de ambulância.",
+    "endpoint": "/api/servicos/ambulancia",
+    "method": "POST",
+    "rolesAllowed": ["cidadao"]
+  },
+  {
+    "id": "servico-saude-04",
+    "name": "Vacinação Infantil",
+    "category": "Saúde",
+    "description": "Registra vacinação de crianças.",
+    "endpoint": "/api/servicos/vacinacao-infantil",
+    "method": "POST",
+    "rolesAllowed": ["admin", "operador"]
+  },
+  {
+    "id": "servico-transportes-01",
+    "name": "Solicitar Passe de Estudante",
+    "category": "Transportes",
+    "description": "Solicita passe de transporte para estudantes.",
+    "endpoint": "/api/servicos/passe-estudante",
+    "method": "POST",
+    "rolesAllowed": ["cidadao"]
+  },
+  {
+    "id": "servico-transportes-02",
+    "name": "Consultar Linhas de Ônibus",
+    "category": "Transportes",
+    "description": "Lista linhas de ônibus municipais.",
+    "endpoint": "/api/servicos/linhas-onibus",
+    "method": "GET",
+    "rolesAllowed": ["admin", "cidadao", "operador"]
+  },
+  {
+    "id": "servico-transportes-03",
+    "name": "Solicitar Transporte Adaptado",
+    "category": "Transportes",
+    "description": "Solicita transporte para pessoas com mobilidade reduzida.",
+    "endpoint": "/api/servicos/transporte-adaptado",
+    "method": "POST",
+    "rolesAllowed": ["cidadao"]
+  },
+  {
+    "id": "servico-licenciamento-01",
+    "name": "Requerer Licença Comercial",
+    "category": "Licenciamento",
+    "description": "Solicita licença para atividade comercial.",
+    "endpoint": "/api/servicos/licenca-comercial",
+    "method": "POST",
+    "rolesAllowed": ["admin", "cidadao"]
+  },
+  {
+    "id": "servico-licenciamento-02",
+    "name": "Consultar Licenças Vigentes",
+    "category": "Licenciamento",
+    "description": "Lista licenças em vigor.",
+    "endpoint": "/api/servicos/licencas",
+    "method": "GET",
+    "rolesAllowed": ["admin", "operador"]
+  },
+  {
+    "id": "servico-assistencia-01",
+    "name": "Solicitar Auxílio Social",
+    "category": "Assistência Social",
+    "description": "Solicita benefícios de assistência social.",
+    "endpoint": "/api/servicos/auxilio-social",
+    "method": "POST",
+    "rolesAllowed": ["cidadao"]
+  },
+  {
+    "id": "servico-assistencia-02",
+    "name": "Consultar Benefícios Ativos",
+    "category": "Assistência Social",
+    "description": "Lista benefícios sociais ativos.",
+    "endpoint": "/api/servicos/beneficios",
+    "method": "GET",
+    "rolesAllowed": ["admin", "operador"]
+  },
+  {
+    "id": "servico-cidadania-01",
+    "name": "Emissão de BI",
+    "category": "Cidadania",
+    "description": "Solicita emissão do Bilhete de Identidade.",
+    "endpoint": "/api/servicos/emissao-bi",
+    "method": "POST",
+    "rolesAllowed": ["cidadao"]
+  },
+  {
+    "id": "servico-cidadania-02",
+    "name": "2ª Via de BI",
+    "category": "Cidadania",
+    "description": "Solicita segunda via do Bilhete de Identidade.",
+    "endpoint": "/api/servicos/segunda-via-bi",
+    "method": "POST",
+    "rolesAllowed": ["cidadao"]
+  },
+  {
+    "id": "servico-cidadania-03",
+    "name": "Atualização de Dados Cadastrais",
+    "category": "Cidadania",
+    "description": "Atualiza informações cadastrais do cidadão.",
+    "endpoint": "/api/servicos/atualizacao-cadastral",
+    "method": "POST",
+    "rolesAllowed": ["cidadao"]
+  },
+  {
+    "id": "servico-habitacao-01",
+    "name": "Solicitar Habitação Social",
+    "category": "Habitação",
+    "description": "Solicita inclusão em programas de habitação social.",
+    "endpoint": "/api/servicos/habitacao-social",
+    "method": "POST",
+    "rolesAllowed": ["cidadao"]
+  },
+  {
+    "id": "servico-habitacao-02",
+    "name": "Consultar Programas Habitacionais",
+    "category": "Habitação",
+    "description": "Lista programas de habitação disponíveis.",
+    "endpoint": "/api/servicos/programas-habitacionais",
+    "method": "GET",
+    "rolesAllowed": ["admin", "cidadao"]
+  },
+  {
+    "id": "servico-urbanismo-01",
+    "name": "Solicitar Alvará de Construção",
+    "category": "Urbanismo",
+    "description": "Solicita alvará para construção civil.",
+    "endpoint": "/api/servicos/alvara-construcao",
+    "method": "POST",
+    "rolesAllowed": ["cidadao"]
+  }
+]
+

@@ -1,0 +1,36 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="sila",
+    version="0.1.0",
+    packages=find_packages(where="backend"),
+    package_dir={"": "backend"},
+    install_requires=[
+        # Core dependencies
+        "fastapi>=0.68.0",
+        "uvicorn>=0.15.0",
+        "sqlalchemy>=1.4.0",
+        "pydantic>=1.8.0",
+        "python-jose[cryptography]>=3.3.0",
+        "passlib[bcrypt]>=1.7.4",
+        "python-multipart>=0.0.5",
+        "python-dotenv>=0.19.0",
+        "alembic>=1.7.4",
+        "psycopg2-binary>=2.9.1",
+        "prisma>=0.8.1",
+    ],
+    extras_require={
+        "dev": [
+            "pytest>=6.2.5",
+            "pytest-cov>=2.12.1",
+            "pytest-mock>=3.10.0",
+            "black>=21.12b0",
+            "isort>=5.10.1",
+            "mypy>=0.931",
+            "flake8>=4.0.1",
+            "httpx>=0.22.0",
+        ],
+    },
+    python_requires=">=3.8",
+)
+

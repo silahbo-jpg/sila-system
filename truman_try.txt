@@ -1,0 +1,90 @@
+Boa 👌, o erro está bem claro e a tua primeira análise está na direção certa.
+Mas para tornarmos a solução robusta, limpa e sustentável, precisamos de tratar não só do extend_existing=True, mas também da causa raiz (importações múltiplas / inicialização duplicada).
+
+🔎 Diagnóstico preciso
+
+Erro:
+
+sqlalchemy.exc.InvalidRequestError: Table 'citizenship_atualizacao_b_i' is already defined for this MetaData instance.
+
+
+Isso ocorre porque o SQLAlchemy mantém todas as tabelas registradas dentro de um objeto MetaData (normalmente Base.metadata). Se a mesma tabela é declarada duas vezes (seja pelo mesmo arquivo carregado mais de uma vez, ou por importações circulares), o erro aparece.
+
+🛠️ Solução robusta
+✅ 1. Corrigir a definição do modelo
+
+No arquivo backend/app/models/citizenship_atualizacao_b_i.py, garanta que o modelo está definido assim:
+
+from sqlalchemy import Column, Integer, String, DateTime
+from app.db.base_class import Base
+
+
+class AtualizacaoBI(Base):
+    __tablename__ = "citizenship_atualizacao_b_i"
+    __table_args__ = {"extend_existing": True}  # <-- evita conflito de redefinição
+
+    id = Column(Integer, primary_key=True, index=True)
+    numero_documento = Column(String, nullable=False, index=True)
+    nome_completo = Column(String, nullable=False)
+    data_submissao = Column(DateTime, nullable=False)
+    estado = Column(String, default="Pendente")
+    numero_processo = Column(String, nullable=True)
+    observacoes = Column(String, nullable=True)
+
+
+👉 Isso resolve o sintoma (permitindo redefinição).
+Mas só isso mascara o problema: precisamos também garantir que não estamos importando 2x o mesmo modelo.
+
+✅ 2. Evitar importações duplicadas
+
+No backend/app/models/__init__.py:
+
+# Evite reimportar ou redefinir as classes diretamente
+# Mantenha apenas importações explícitas e consistentes
+
+from .citizenship_atualizacao_b_i import AtualizacaoBI
+# ... outros modelos
+
+
+⚠️ Verifique se em algum lugar você tem algo como:
+
+from app.models import citizenship_atualizacao_b_i
+from app.models.citizenship_atualizacao_b_i import AtualizacaoBI
+
+
+Isso carrega o mesmo arquivo por caminhos diferentes → duplicando a definição da tabela.
+Escolha uma forma só e padronize em todo o projeto.
+
+✅ 3. Conftest e testes
+
+No backend/tests/conftest.py, revise se você está criando as tabelas (Base.metadata.create_all(bind=engine)) mais de uma vez. Isso deve ser feito somente 1x na configuração inicial de testes.
+
+Se você precisa isolar os testes, use drop_all() + create_all() dentro de fixtures, mas não redefina modelos.
+
+✅ 4. Debug rápido de onde vem a duplicação
+
+Se ainda aparecer o erro, pode ser útil logar quando o modelo é importado.
+No topo de citizenship_atualizacao_b_i.py:
+
+import logging
+logging.getLogger(__name__).warning("Carregando modelo AtualizacaoBI")
+
+
+Ao rodar os testes, você verá se o arquivo está sendo carregado múltiplas vezes e por quais caminhos.
+
+🚀 Plano de ação recomendado
+
+Corrigir o modelo adicionando __table_args__ = {"extend_existing": True}.
+
+Padronizar importações → sempre from app.models.citizenship_atualizacao_b_i import AtualizacaoBI.
+
+Revisar conftest → garantir que Base.metadata.create_all() roda só uma vez.
+
+(Opcional) Logar carregamento para confirmar se ainda há múltiplas importações.
+
+Depois, reexecutar:
+
+pytest backend/tests/ -v
+
+
+👉 Queres que eu abra o citizenship_atualizacao_b_i.py e já te devolva a versão corrigida e limpa com extend_existing=True e imports ajustados?

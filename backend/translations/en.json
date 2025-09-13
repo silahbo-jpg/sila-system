@@ -1,0 +1,15 @@
+{
+  "app": {
+    "title": "SILA - Integrated Licensing and Authorization System",
+    "welcome": "Welcome to SILA",
+    "error": {
+      "not_found": "Resource not found",
+      "server_error": "Internal server error"
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "unauthorized": "Unauthorized"
+  }
+}

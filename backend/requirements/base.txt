@@ -1,0 +1,18 @@
+# Framework principal
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# Validação e configuração
+pydantic>=2.7.0,<3.0.0
+pydantic-settings==2.10.1
+
+# ORM e banco de dados
+sqlalchemy==2.0.23
+asyncpg==0.29.0  # Driver PostgreSQL assíncrono
+
+# Upload de arquivos
+python-multipart==0.0.6
+
+# Autenticação e segurança
+python-jose==3.3.0
+passlib[bcrypt]==1.7.4

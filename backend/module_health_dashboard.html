@@ -1,0 +1,377 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Module Health Dashboard</title>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f8f9fa; color: #333; }
+            .container { max-width: 1600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+            h1 { color: #2c3e50; margin-bottom: 10px; }
+            
+            .summary { display: flex; justify-content: space-around; margin: 20px 0; flex-wrap: wrap; }
+            .stat-box { background: #f8f9fa; padding: 15px; border-radius: 6px; text-align: center; min-width: 150px; margin: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+            .stat-total { border-left: 4px solid #2196F3; }
+            .stat-discovered { border-left: 4px solid #4CAF50; }
+            .stat-functional { border-left: 4px solid #FF9800; }
+            .stat-mapped { border-left: 4px solid #9C27B0; }
+            .stat-number { font-size: 24px; font-weight: bold; margin: 5px 0; }
+            
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14px; }
+            th, td { padding: 12px 15px; border: 1px solid #ddd; text-align: center; }
+            th { background-color: #2c3e50; color: white; position: sticky; top: 0; }
+            
+            tr.healthy { background-color: #e8f5e9; }
+            tr.warning { background-color: #fff8e1; }
+            tr.critical { background-color: #ffebee; }
+            
+            .status-cell { font-weight: bold; }
+            .healthy .status-cell { color: #4CAF50; }
+            .warning .status-cell { color: #FF9800; }
+            .critical .status-cell { color: #F44336; }
+            
+            .footer { margin-top: 30px; text-align: center; color: #6c757d; font-size: 14px; }
+            
+            @media (max-width: 1200px) {
+                .container { padding: 10px; }
+                table { font-size: 12px; }
+                th, td { padding: 8px 10px; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Module Health Dashboard</h1>
+                <p><b>Generated:</b> 2025-08-27 04:24:05</p>
+                <p><b>Catalog:</b> modules_services.json</p>
+            </header>
+            
+            <div class="summary">
+                <div class="stat-box stat-total">
+                    <div class="stat-label">Expected Services</div>
+                    <div class="stat-number">40</div>
+                </div>
+                <div class="stat-box stat-discovered">
+                    <div class="stat-label">Discovered</div>
+                    <div class="stat-number">3</div>
+                </div>
+                <div class="stat-box stat-functional">
+                    <div class="stat-label">Functional</div>
+                    <div class="stat-number">2</div>
+                </div>
+                <div class="stat-box stat-mapped">
+                    <div class="stat-label">Admin Mapped</div>
+                    <div class="stat-number">0</div>
+                </div>
+                <div class="stat-box stat-mapped">
+                    <div class="stat-label">Citizen Mapped</div>
+                    <div class="stat-number">0</div>
+                </div>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Module ID</th>
+                        <th>Display Name</th>
+                        <th>Expected</th>
+                        <th>Discovered</th>
+                        <th>Functional</th>
+                        <th>Admin Mapped</th>
+                        <th>Citizen Mapped</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr class="critical">
+            <td>address</td>
+            <td>Address</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>appointments</td>
+            <td>Appointments</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>auth</td>
+            <td>Auth</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>citizenship</td>
+            <td>Citizenship</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>commercial</td>
+            <td>Commercial</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>common</td>
+            <td>Common</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>complaints</td>
+            <td>Complaints</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>documents</td>
+            <td>Documents</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>education</td>
+            <td>Education</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>finance</td>
+            <td>Finance</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>governance</td>
+            <td>Governance</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>health</td>
+            <td>Health</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>integration</td>
+            <td>Integration</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>internal</td>
+            <td>Internal</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>journeys</td>
+            <td>Journeys</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>justice</td>
+            <td>Justice</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>monitoring</td>
+            <td>Monitoring</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>registry</td>
+            <td>Registry</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>reports</td>
+            <td>Reports</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>sanitation</td>
+            <td>Sanitation</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>service_hub</td>
+            <td>Service hub</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>social</td>
+            <td>Social</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>statistics</td>
+            <td>Statistics</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="critical">
+            <td>training</td>
+            <td>Training</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">❌ Not Discovered</td>
+        </tr>
+        
+        <tr class="warning">
+            <td>urbanism</td>
+            <td>Urbanism</td>
+            <td>40</td>
+            <td>3</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">⚠️ Partial Discovery</td>
+        </tr>
+        
+                </tbody>
+            </table>
+            
+            <div class="footer">
+                <p>Dashboard generated by SILA Health Monitoring System | 2025-08-27 04:24:05</p>
+                <p>✅ Healthy: All services discovered, functional, and properly mapped</p>
+                <p>⚠️ Warning: Partial discovery, functional issues, or incomplete mapping</p>
+                <p>❌ Critical: No services discovered or major issues</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    

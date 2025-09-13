@@ -1,0 +1,87 @@
+{
+  "urbanism": {
+    "display_name": "Urbanism",
+    "module_path": "app\\modules\\urbanism",
+    "services": [
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "method": "GET", 
+        "status": "SUCCESS",
+        "message": "200 (45ms)",
+        "details": {
+          "status_code": 200,
+          "response_time_ms": 45,
+          "content_type": "application/json",
+          "content_length": 156,
+          "attempt": 1
+        },
+        "function_name": "consultar_alvara_funcionamento",
+        "description": "Consulta status de alvará de funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": ["urbanism"],
+        "frontend_admin": "admin.urbanism.alvara",
+        "frontend_citizen": "citizen.services.alvara",
+        "test_timestamp": "2025-08-27T03:22:00.000Z"
+      },
+      {
+        "endpoint": "/api/habite-se/",
+        "method": "GET",
+        "status": "AUTH_REQUIRED", 
+        "message": "401 - Authentication required (23ms)",
+        "details": {
+          "status_code": 401,
+          "response_time_ms": 23,
+          "content_type": "application/json",
+          "content_length": 89,
+          "attempt": 1
+        },
+        "function_name": "consultar_habite_se",
+        "description": "Consulta certificado habite-se",
+        "router_prefix": "/api/habite-se", 
+        "router_tags": ["urbanism"],
+        "frontend_admin": "admin.urbanism.habite_se",
+        "frontend_citizen": null,
+        "test_timestamp": "2025-08-27T03:22:00.100Z"
+      },
+      {
+        "endpoint": "/api/parcelamento-solo/",
+        "method": "GET",
+        "status": "SUCCESS",
+        "message": "200 (67ms)",
+        "details": {
+          "status_code": 200,
+          "response_time_ms": 67,
+          "content_type": "application/json",
+          "content_length": 234,
+          "attempt": 1
+        },
+        "function_name": "consultar_parcelamento_solo",
+        "description": "Consulta parcelamento de solo",
+        "router_prefix": "/api/parcelamento-solo",
+        "router_tags": ["urbanism"],
+        "frontend_admin": "admin.urbanism.parcelamento",
+        "frontend_citizen": "citizen.services.parcelamento", 
+        "test_timestamp": "2025-08-27T03:22:00.200Z"
+      }
+    ],
+    "total_tested": 3
+  },
+  "address": {
+    "display_name": "Address",
+    "module_path": "app\\modules\\address",
+    "services": [],
+    "total_tested": 0
+  },
+  "appointments": {
+    "display_name": "Appointments", 
+    "module_path": "app\\modules\\appointments",
+    "services": [],
+    "total_tested": 0
+  },
+  "auth": {
+    "display_name": "Auth",
+    "module_path": "app\\modules\\auth", 
+    "services": [],
+    "total_tested": 0
+  }
+}

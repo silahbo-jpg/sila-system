@@ -1,0 +1,9 @@
+[2025-08-18 11:52:41.292035]  C:\Users\User5\Music\MEGA1\sila\postgres\.env: POSTGRES_PASSWORD="Truman1_Marcelo1_1985" → POSTGRES_PASSWORD="Truman1_Marcelo1_1985"
+[2025-08-18 11:52:41.381827] ⚠️ C:\Users\User5\Music\MEGA1\sila\postgres\backend\.env: variável não encontrada
+[2025-08-18 11:52:45.072945]  C:\Users\User5\Music\MEGA1\sila\postgres\backups\normalization_20250817_025422\.env: POSTGRES_PASSWORD="Truman1_Marcelo1_1985" → POSTGRES_PASSWORD="Truman1_Marcelo1_1985"
+[2025-08-18 11:52:45.105798] ⚠️ C:\Users\User5\Music\MEGA1\sila\postgres\backups\normalization_20250817_025422\backend\.env: variável não encontrada
+[2025-08-18 11:52:50.770423] ⚠️ C:\Users\User5\Music\MEGA1\sila\postgres\backups\normalization_20250817_025422\frontend\webapp\.env: variável não encontrada
+[2025-08-18 11:53:01.378004]  C:\Users\User5\Music\MEGA1\sila\postgres\backups\normalization_20250817_025422\scripts\.env: POSTGRES_PASSWORD="Truman1_Marcelo1_1985" → POSTGRES_PASSWORD="Truman1_Marcelo1_1985"
+[2025-08-18 11:53:01.573468] ⚠️ C:\Users\User5\Music\MEGA1\sila\postgres\frontend\webapp\.env: variável não encontrada
+[2025-08-18 11:53:37.553453] ⚠️ C:\Users\User5\Music\MEGA1\sila\postgres\scripts\.env: variável não encontrada
+[2025-08-18 11:53:37.559401]  C:\Users\User5\Music\MEGA1\sila\postgres\scripts\backups\standardize_20250817_075359\.env: POSTGRES_PASSWORD="Truman1_Marcelo1_1985" → POSTGRES_PASSWORD="Truman1_Marcelo1_1985"

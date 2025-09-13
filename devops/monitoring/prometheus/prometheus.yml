@@ -1,0 +1,40 @@
+# Configuração global
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+# Configurações de regras
+rule_files:
+  # - 'alert.rules'
+
+# Configuração dos alvos a serem monitorados
+scrape_configs:
+  # Monitoramento do próprio Prometheus
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Monitoramento da aplicação SILA
+  - job_name: 'sila-backend'
+    metrics_path: '/monitoring/metrics'
+    static_configs:
+      - targets: ['host.docker.internal:8000']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: host.docker.internal:8000  # O host do Prometheus
+
+  # Monitoramento do Node Exporter (métricas do sistema)
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+# Configuração de alertas
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ['alertmanager:9093']
+

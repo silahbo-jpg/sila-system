@@ -1,0 +1,23 @@
+{{ define "slack.sila.title" }}{{ template "slack.sila.title.__text" . }}{{ end }}
+{{ define "slack.sila.title.__text" }}[{{ .Status | toUpper }}{{ if eq .Status "firing" }}:{{ .Alerts.Firing | len }}{{ end }}] {{ .CommonLabels.alertname }} on {{ .CommonLabels.job }}{{ end }}
+
+{{ define "slack.sila.text" }}
+{{ if eq .Status "firing" }}
+{{ range .Alerts }}
+*Alert:* {{ .Annotations.summary }}
+*Descrição:* {{ .Annotations.description }}
+*Severidade:* {{ .Labels.severity }}
+*Time:* {{ .StartsAt | time }}
+*Grafana:* {{ .GeneratorURL }}
+{{ end }}
+{{ else }}
+{{ range .Alerts }}
+*Resolvido:* {{ .Annotations.summary }}
+*Descrição:* {{ .Annotations.description }}
+*Início:* {{ .StartsAt | time }}
+*Fim:* {{ .EndsAt | time }}
+*Duração:* {{ .EndsAt.Sub .StartsAt | duration }}
+{{ end }}
+{{ end }}
+{{ end }}
+

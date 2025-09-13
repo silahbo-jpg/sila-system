@@ -1,0 +1,211 @@
+# backend/app/schemas/user.py
+from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator, validator
+from typing import Optional, List, Dict, Any, ClassVar
+from datetime import datetime
+
+# Importa as permissões centralizadas
+from app.core.permissions import Permissions
+
+class PermissionBase(BaseModel):
+    """
+    Schema base para permissões.
+    """
+    name: str
+                                                       description: Any = Field(json_schema_extra={'example': 'John Doe'}, max_length=100100)
+                                                                                                                                                                                                                             role: Any = Field(json_schema_extra={'example': 'user'}, default=useruser)
+                                                                                                                                                                                                                                      user_type: Any = Field(json_schema_extra={'example': 'citizen'}, default=citizencitizen)
+                                                                                                                                                                                                                                               is_active: Any = Field(json_schema_extra={'example': True}, default=TrueTrue)
+                                                                                                                                                                                                                                                        municipality_id: Any = Field(json_schema_extra={'example': 1})
+
+# Esquema para criação de usuário
+class UserCreate(UserBase):
+                                                                                                                                                                                                                                                                       password: Any = Field(json_schema_extra={'example': 'SenhaSegura123!@#'}, min_length=1212)
+    
+    @field_validator("password")
+    @classmethod
+    def password_complexity(cls, v):
+        from app.core.security import validate_password_strength, PASSWORD_POLICY, is_password_compromised
+        
+        # Verifica força da senha
+        is_valid, errors = validate_password_strength(v)
+        if not is_valid:
+            raise ValueError(" ".join(errors))
+        
+        # Verifica se a senha está comprometida
+        if is_password_compromised(v):
+            raise ValueError('Esta senha foi comprometida em vazamentos de dados. Por favor, escolha uma senha mais segura.')
+            
+        return v
+
+# Esquema para atualização de usuário
+class UserUpdate(BaseModel):
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            email: Any = Field(json_schema_extra={'example': 'johndoe_updated@example.com'})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                     name: Any = Field(json_schema_extra={'example': 'John Doe Updated'}, max_length=100100)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 password: Any = Field(json_schema_extra={'example': 'NovaSenhaRobustaInstitucional!!@#'}, min_length=1212)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           role: Any = Field(json_schema_extra={'example': 'admin'})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    user_type: Any = Field(json_schema_extra={'example': 'municipal_staff'})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             is_active: Any = Field(json_schema_extra={'example': True})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      municipality_id: Any = Field(json_schema_extra={'example': 1})
+    
+    @field_validator("password")
+    @classmethod
+    def password_complexity(cls, v):
+        if v is not None:
+            from app.core.security import validate_password_strength, is_password_compromised
+            
+            # Verifica força da senha
+            is_valid, errors = validate_password_strength(v)
+            if not is_valid:
+                raise ValueError(" ".join(errors))
+            
+            # Verifica se a senha está comprometida
+            if is_password_compromised(v):
+                raise ValueError('Esta senha foi comprometida em vazamentos de dados. Por favor, escolha uma senha mais segura.')
+                
+            return v
+
+# Esquema para resposta de usuário
+class UserResponse(UserBase):
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     id: Any = Field(json_schema_extra={'example': 1})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              created_at: Any = Field(json_schema_extra={'example': '2023-01-01T00:00:00'})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       updated_at: Any = Field(json_schema_extra={'example': '2023-01-01T00:00:00'})
+    
+    model_config = ConfigDict(from_attributes=True)
+
+# Esquema para usuário no banco de dados (inclui senha hash)
+class UserInDB(UserResponse):
+    """Schema para usuário no banco de dados com informações sensíveis.
+    
+    Inclui a senha hash e as permissões do usuário.
+    """
+    hashed_password: str = Field(..., alias="hashed_password")
+    failed_attempts: int = Field(default=0)
+    last_login: Optional[datetime] = Field(None)
+    locked_until: Optional[datetime] = Field(None)
+    permissions: List[str] = Field(
+        default_factory=list,
+        description="Lista de permissões do usuário, incluindo as do seu perfil"
+    )
+    
+    model_config = ConfigDict(
+        populate_by_name=True,
+        from_attributes=True,
+        json_schema_extra={
+            "example": {
+                "id": 1,
+                "email": "johndoe@example.com",
+                "name": "John Doe",
+                "role": "user",
+                "user_type": "citizen",
+                "is_active": True,
+                "municipality_id": 1,
+                "created_at": "2023-01-01T00:00:00",
+                "updated_at": "2023-01-01T00:00:00",
+                "hashed_password": "$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW",
+                "failed_attempts": 0,
+                "last_login": None,
+                "locked_until": None,
+                "permissions": ["users:read", "citizenship:read"]
+            }
+        }
+    )
+
+# Esquema para token de acesso
+class Token(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+
+# Esquema para dados do token
+class TokenData(BaseModel):
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      username: Any = Field(json_schema_extra={'example': 'Permite ler informações de usuários'})
+
+class PermissionCreate(PermissionBase):
+    pass
+
+class PermissionResponse(PermissionBase):
+    id: int
+    created_at: datetime
+    
+    model_config = ConfigDict(from_attributes=True)
+
+class RoleBase(BaseModel):
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          name: Any = Field(json_schema_extra={'example': 'admin'})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   description: Any = Field(json_schema_extra={'example': 'Administrador do sistema'})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              is_default: Any = Field(json_schema_extra={'example': False}, default=FalseFalse)
+
+class RoleCreate(RoleBase):
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        permission_ids: Any = Field(json_schema_extra={'example': [1, 2, 3]}, default_factory=<class 'list'>default_factory=<class 'list'>)
+
+class RoleUpdate(RoleBase):
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       name: Any = Field(json_schema_extra={'example': 'admin_updated'})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                description: Any = Field(json_schema_extra={'example': 'Descrição atualizada'})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          permission_ids: Any = Field(json_schema_extra={'example': [1, 2, 3, 4]}, default=NoneNone)
+
+class RoleResponse(RoleBase):
+    id: int
+    created_at: datetime
+    updated_at: datetime
+    permissions: List[PermissionResponse] = []
+    
+    model_config = ConfigDict(from_attributes=True)
+
+# Esquema para resposta de perfil do usuário
+class UserProfileResponse(UserResponse):
+    role: Optional[RoleResponse] = None
+    permissions: List[str] = []
+    
+    @classmethod
+    def from_user_with_role(cls, user: UserInDB, role: Optional[RoleResponse] = None, permissions: List[str] = None):
+        user_dict = user.model_dump(exclude={"hashed_password"})
+        return cls(
+            **user_dict,
+            role=role,
+            permissions=permissions or []
+        )
+
+# Esquema para atualização de senha
+class PasswordUpdate(BaseModel):
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              current_password: Any = Field(json_schema_extra={'example': 'SenhaAtual123!@#'})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       new_password: Any = Field(json_schema_extra={'example': 'NovaSenhaRobustaInstitucional!!@#'})
+    
+    @field_validator("new_password")
+    @classmethod
+    def password_complexity(cls, v):
+        from app.core.security import validate_password_strength, is_password_compromised
+        
+        # Verifica força da senha
+        is_valid, errors = validate_password_strength(v)
+        if not is_valid:
+            raise ValueError(" ".join(errors))
+        
+        # Verifica se a senha está comprometida
+        if is_password_compromised(v):
+            raise ValueError('Esta senha foi comprometida em vazamentos de dados. Por favor, escolha uma senha mais segura.')
+            
+        return v
+
+# Esquema para redefinição de senha
+class PasswordResetRequest(BaseModel):
+    email: EmailStr
+
+# Esquema para conclusão de redefinição de senha
+class PasswordResetConfirm(BaseModel):
+    token: str
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            new_password: Any = Field(json_schema_extra={'example': 'NovaSenhaRobustaInstitucional!!@#'}, min_length=1212)
+    
+    @field_validator("new_password")
+    @classmethod
+    def password_complexity(cls, v):
+        from app.core.security import validate_password_strength, is_password_compromised
+        
+        # Verifica força da senha
+        is_valid, errors = validate_password_strength(v)
+        if not is_valid:
+            raise ValueError(" ".join(errors))
+        
+        # Verifica se a senha está comprometida
+        if is_password_compromised(v):
+            raise ValueError('Esta senha foi comprometida em vazamentos de dados. Por favor, escolha uma senha mais segura.')
+            
+        return v
+

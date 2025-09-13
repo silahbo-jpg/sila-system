@@ -1,0 +1,11 @@
+﻿# ConfiguraÃ§Ãµes bÃ¡sicas do projeto
+app:
+  name: "SILA System"
+  version: "1.0.0"
+  debug: false
+
+database:
+  host: "localhost"
+  port: 5432
+  username: "sila_user"
+  password: "change_me"

@@ -1,0 +1,6 @@
+python-dotenv could not parse statement starting at line 6
+python-dotenv could not parse statement starting at line 8
+python-dotenv could not parse statement starting at line 15
+python-dotenv could not parse statement starting at line 17
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.

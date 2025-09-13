@@ -1,0 +1,9 @@
+Hook,Repositório,Versão Anterior,Versão Nova
+1,  - https://github.com/pre-commit/pre-commit-hooks,    v6.0.0
+2,  - https://github.com/koalaman/shellcheck-precommit,    v0.11.0
+3,  - local,  - repo: https://github.com/psf/black
+4,    25.1.0,  - https://github.com/pycqa/isort
+5,    6.0.1,  - https://github.com/pycqa/flake8
+6,    7.3.0,  - https://github.com/PyCQA/bandit
+7,    1.8.6,  - https://github.com/Yelp/detect-secrets
+8,    v1.5.0,

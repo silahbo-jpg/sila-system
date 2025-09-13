@@ -1,0 +1,40 @@
+SILA Service Discovery Summary Report
+==================================================
+Generated: 2025-08-27 04:21:55
+
+📊 OVERVIEW:
+  • Total Modules Scanned: 25
+  • Modules with Endpoints: 1
+  • Total API Endpoints: 40
+
+🔍 HTTP METHODS DISTRIBUTION:
+  • GET: 20 endpoints
+  • POST: 10 endpoints
+  • PUT: 10 endpoints
+
+📋 MODULE BREAKDOWN:
+  ⚠️ Address: 0 endpoints
+  ⚠️ Appointments: 0 endpoints
+  ⚠️ Auth: 0 endpoints
+  ⚠️ Citizenship: 0 endpoints
+  ⚠️ Commercial: 0 endpoints
+  ⚠️ Common: 0 endpoints
+  ⚠️ Complaints: 0 endpoints
+  ⚠️ Documents: 0 endpoints
+  ⚠️ Education: 0 endpoints
+  ⚠️ Finance: 0 endpoints
+  ⚠️ Governance: 0 endpoints
+  ⚠️ Health: 0 endpoints
+  ⚠️ Integration: 0 endpoints
+  ⚠️ Internal: 0 endpoints
+  ⚠️ Journeys: 0 endpoints
+  ⚠️ Justice: 0 endpoints
+  ⚠️ Monitoring: 0 endpoints
+  ⚠️ Registry: 0 endpoints
+  ⚠️ Reports: 0 endpoints
+  ⚠️ Sanitation: 0 endpoints
+  ⚠️ Service hub: 0 endpoints
+  ⚠️ Social: 0 endpoints
+  ⚠️ Statistics: 0 endpoints
+  ⚠️ Training: 0 endpoints
+  ✅ Urbanism: 40 endpoints

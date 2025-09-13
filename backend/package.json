@@ -1,0 +1,9 @@
+{
+  "name": "sila-backend",
+  "version": "1.0.0",
+  "description": "SILA Backend with FastAPI",
+  "main": "app/main.py",
+  "devDependencies": {
+    "prisma": "^5.17.0"
+  }
+}

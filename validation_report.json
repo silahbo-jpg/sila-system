@@ -1,0 +1,25 @@
+{
+    "AllPassed":  false,
+    "ModuleResults":  {
+
+                      },
+    "Timestamp":  "2025-08-09 04:45:25",
+    "Results":  {
+                    "C:\\Users\\User5\\Music\\MEGA1\\sila\\postgres\\scripts\\fix_module_structure_fixed.ps1":  {
+                                                                                                                       "Critical":  true,
+                                                                                                                       "Name":  "Verificação de Estrutura de Módulos",
+                                                                                                                       "Success":  false
+                                                                                                                   },
+                    "C:\\Users\\User5\\Music\\MEGA1\\sila\\postgres\\scripts\\validate-modules.ps1":  {
+                                                                                                             "Critical":  true,
+                                                                                                             "Name":  "Validação de Módulos",
+                                                                                                             "Success":  false
+                                                                                                         },
+                    "C:\\Users\\User5\\Music\\MEGA1\\sila\\postgres\\scripts\\sync-endpoints.ps1":  {
+                                                                                                           "Critical":  true,
+                                                                                                           "Name":  "Sincronização de Endpoints",
+                                                                                                           "Success":  false
+                                                                                                       }
+                }
+}
+

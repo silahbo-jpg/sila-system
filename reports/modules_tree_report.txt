@@ -1,0 +1,572 @@
+
+📁 Estrutura de: backend\app\modules/
+
+├── __init__.py (2.00 B)
+├── address/
+│   ├── __init__.py (207.00 B)
+│   ├── models/
+│   │   ├── __init__.py (107.00 B)
+│   │   ├── geocodificacao_endereco.py (902.00 B)
+│   │   ├── normalizacao_endereco.py (898.00 B)
+│   │   └── validacao_c_e_p.py (884.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (107.00 B)
+│   │   ├── geocodificacao_endereco.py (2.19 KB)
+│   │   ├── normalizacao_endereco.py (2.14 KB)
+│   │   └── validacao_c_e_p.py (1.91 KB)
+│   ├── schemas/
+│   │   ├── geocodificacao_endereco.py (976.00 B)
+│   │   ├── normalizacao_endereco.py (970.00 B)
+│   │   └── validacao_c_e_p.py (946.00 B)
+│   ├── services/
+│   │   ├── __init__.py (20.00 B)
+│   │   └── address_service.py (8.11 KB)
+│   └── tests/
+│       └── __init__.py (106.00 B)
+├── appointments/
+│   ├── __init__.py (126.00 B)
+│   ├── models/
+│   │   └── __init__.py (112.00 B)
+│   ├── routes/
+│   │   └── __init__.py (112.00 B)
+│   ├── services/
+│   │   └── __init__.py (114.00 B)
+│   └── tests/
+│       └── __init__.py (111.00 B)
+├── auth/
+│   ├── __init__.py (225.00 B)
+│   ├── models/
+│   │   ├── autenticacao_multifator.py (899.00 B)
+│   │   ├── controle_acesso.py (883.00 B)
+│   │   ├── gestao_usuario.py (881.00 B)
+│   │   └── sessao_segura.py (879.00 B)
+│   └── routes/
+│       ├── autenticacao_multifator.py (2.19 KB)
+│       ├── controle_acesso.py (1.91 KB)
+│       ├── gestao_usuario.py (1.91 KB)
+│       └── sessao_segura.py (1.84 KB)
+├── citizenship/
+│   ├── __init__.py (2.56 KB)
+│   ├── models/
+│   │   ├── __init__.py (111.00 B)
+│   │   ├── atualizacao_b_i.py (890.00 B)
+│   │   ├── atualizacao_endereco.py (901.00 B)
+│   │   ├── certidao_casamento.py (897.00 B)
+│   │   ├── certidao_nascimento.py (899.00 B)
+│   │   ├── certidao_obito.py (889.00 B)
+│   │   ├── declaracao_residencia.py (903.00 B)
+│   │   ├── emissao_b_i.py (882.00 B)
+│   │   ├── emissao_passaporte.py (897.00 B)
+│   │   ├── regitro_eleitoral.py (895.00 B)
+│   │   └── visto_permanencia.py (895.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (111.00 B)
+│   │   ├── atualizacao_b_i.py (2.89 KB)
+│   │   ├── atualizacao_endereco.py (2.92 KB)
+│   │   ├── certidao_casamento.py (2.87 KB)
+│   │   ├── certidao_nascimento.py (2.88 KB)
+│   │   ├── certidao_obito.py (2.74 KB)
+│   │   ├── declaracao_residencia.py (2.97 KB)
+│   │   ├── emissao_b_i.py (2.77 KB)
+│   │   ├── emissao_bi_route.py (575.00 B)
+│   │   ├── emissao_passaporte.py (2.85 KB)
+│   │   ├── regitro_eleitoral.py (2.82 KB)
+│   │   └── visto_permanencia.py (2.85 KB)
+│   ├── services/
+│   │   ├── __init__.py (113.00 B)
+│   │   └── event_handlers.py (3.94 KB)
+│   ├── tests/
+│   │   └── __init__.py (110.00 B)
+│   └── utils/
+│       ├── __init__.py (280.00 B)
+│       ├── permission_checker.py (8.59 KB)
+│       └── route_analyzer.py (21.30 KB)
+├── commercial/
+│   ├── __init__.py (666.00 B)
+│   ├── models/
+│   │   ├── __init__.py (110.00 B)
+│   │   ├── abertura_processo.py (581.00 B)
+│   │   ├── alvara_comercial.py (892.00 B)
+│   │   ├── certificacao_origem.py (898.00 B)
+│   │   ├── contrato_publico.py (892.00 B)
+│   │   ├── fiscalizacao_mercado.py (900.00 B)
+│   │   ├── inspecao_sanitaria.py (896.00 B)
+│   │   ├── licenca_importacao.py (896.00 B)
+│   │   ├── licenca_industrial.py (896.00 B)
+│   │   ├── registo_empresa.py (890.00 B)
+│   │   ├── registo_marca.py (886.00 B)
+│   │   └── taxa_comercial.py (888.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (110.00 B)
+│   │   ├── abertura_processo.py (2.49 KB)
+│   │   ├── alvara_comercial.py (2.63 KB)
+│   │   ├── certificacao_origem.py (2.76 KB)
+│   │   ├── contrato_publico.py (2.62 KB)
+│   │   ├── fiscalizacao_mercado.py (2.78 KB)
+│   │   ├── inspecao_sanitaria.py (2.71 KB)
+│   │   ├── licenca_importacao.py (2.71 KB)
+│   │   ├── licenca_industrial.py (2.69 KB)
+│   │   ├── registo_empresa.py (2.63 KB)
+│   │   ├── registo_marca.py (2.57 KB)
+│   │   └── taxa_comercial.py (2.55 KB)
+│   ├── services/
+│   │   └── __init__.py (112.00 B)
+│   └── tests/
+│       └── __init__.py (109.00 B)
+├── common/
+│   ├── __init__.py (288.00 B)
+│   ├── models/
+│   │   ├── __init__.py (106.00 B)
+│   │   ├── cache_distribuido.py (889.00 B)
+│   │   ├── configuracao_global.py (893.00 B)
+│   │   ├── log_sistema.py (877.00 B)
+│   │   └── validador_formulario.py (895.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (106.00 B)
+│   │   ├── cache_distribuido.py (1.97 KB)
+│   │   ├── configuracao_global.py (2.05 KB)
+│   │   ├── log_sistema.py (1.80 KB)
+│   │   └── validador_formulario.py (2.07 KB)
+│   ├── services/
+│   │   └── __init__.py (108.00 B)
+│   └── tests/
+│       └── __init__.py (105.00 B)
+├── complaints/
+│   ├── __init__.py (1.52 KB)
+│   ├── routes/
+│   │   ├── __init__.py (110.00 B)
+│   │   ├── corrupcao_administrativa.py (2.91 KB)
+│   │   ├── denuncia_ambiental.py (2.70 KB)
+│   │   ├── denuncia_cidada.py (2.59 KB)
+│   │   ├── fiscalizacao_obra.py (2.71 KB)
+│   │   ├── irregularidade_fiscal.py (2.77 KB)
+│   │   ├── mau_atendimento.py (2.57 KB)
+│   │   ├── ouvidoria_municipal.py (2.72 KB)
+│   │   ├── reclamacao_servico.py (2.72 KB)
+│   │   ├── sugestao_melhoria.py (2.70 KB)
+│   │   └── violacao_direitos.py (2.68 KB)
+│   └── tests/
+│       ├── __init__.py (41.00 B)
+│       └── conftest.py (1.83 KB)
+├── documents/
+│   ├── __init__.py (189.00 B)
+│   ├── models/
+│   │   ├── __init__.py (109.00 B)
+│   │   ├── assinatura_digital.py (894.00 B)
+│   │   ├── gerador_documento.py (892.00 B)
+│   │   └── template_documento.py (894.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (109.00 B)
+│   │   ├── assinatura_digital.py (2.00 KB)
+│   │   ├── gerador_documento.py (2.00 KB)
+│   │   └── template_documento.py (2.02 KB)
+│   ├── schemas/
+│   │   ├── assinatura_digital.py (961.00 B)
+│   │   ├── gerador_documento.py (958.00 B)
+│   │   └── template_documento.py (961.00 B)
+│   ├── services/
+│   │   ├── __init__.py (20.00 B)
+│   │   └── document_service.py (4.85 KB)
+│   └── tests/
+│       └── __init__.py (108.00 B)
+├── education/
+│   ├── __init__.py (769.00 B)
+│   ├── models/
+│   │   ├── __init__.py (109.00 B)
+│   │   ├── alfabetizacao_adulto.py (899.00 B)
+│   │   ├── bolsa_estudo.py (883.00 B)
+│   │   ├── curso_tecnico.py (885.00 B)
+│   │   ├── educacao_especial.py (893.00 B)
+│   │   ├── ensino_superior.py (889.00 B)
+│   │   ├── historico_escolar.py (893.00 B)
+│   │   ├── matricula_escolar.py (893.00 B)
+│   │   ├── merenda_escolar.py (889.00 B)
+│   │   ├── transferencia_escolar.py (901.00 B)
+│   │   └── transporte_escolar.py (895.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (109.00 B)
+│   │   ├── alfabetizacao_adulto.py (2.80 KB)
+│   │   ├── bolsa_estudo.py (2.60 KB)
+│   │   ├── curso_tecnico.py (2.64 KB)
+│   │   ├── educacao_especial.py (2.67 KB)
+│   │   ├── ensino_superior.py (2.68 KB)
+│   │   ├── historico_escolar.py (2.74 KB)
+│   │   ├── matricula_escolar.py (2.66 KB)
+│   │   ├── merenda_escolar.py (2.60 KB)
+│   │   ├── transferencia_escolar.py (2.77 KB)
+│   │   └── transporte_escolar.py (2.70 KB)
+│   ├── services/
+│   │   └── __init__.py (111.00 B)
+│   └── tests/
+│       └── __init__.py (108.00 B)
+├── finance/
+│   ├── __init__.py (675.00 B)
+│   ├── models/
+│   │   ├── __init__.py (107.00 B)
+│   │   ├── apoio_empreendedor.py (893.00 B)
+│   │   ├── consulta_debito.py (887.00 B)
+│   │   ├── contabilidade_publica.py (899.00 B)
+│   │   ├── declaracao_impostos.py (895.00 B)
+│   │   ├── emissao_recibo.py (885.00 B)
+│   │   ├── isencao_taxa.py (881.00 B)
+│   │   ├── micro_credito.py (883.00 B)
+│   │   ├── pagamento_taxa.py (885.00 B)
+│   │   ├── parcelamento_debito.py (895.00 B)
+│   │   ├── payment.py (1.53 KB)
+│   │   ├── subsidio_habitacao.py (893.00 B)
+│   │   └── transaction.py (1.30 KB)
+│   ├── routes/
+│   │   ├── __init__.py (107.00 B)
+│   │   ├── apoio_empreendedor.py (2.71 KB)
+│   │   ├── consulta_debito.py (1.93 KB)
+│   │   ├── contabilidade_publica.py (2.78 KB)
+│   │   ├── declaracao_impostos.py (2.73 KB)
+│   │   ├── emissao_recibo.py (2.58 KB)
+│   │   ├── isencao_taxa.py (2.51 KB)
+│   │   ├── micro_credito.py (2.61 KB)
+│   │   ├── pagamento_taxa.py (2.01 KB)
+│   │   ├── parcelamento_debito.py (2.74 KB)
+│   │   └── subsidio_habitacao.py (2.71 KB)
+│   ├── schemas/
+│   │   ├── __init__.py (108.00 B)
+│   │   ├── apoio_empreendedor.py (961.00 B)
+│   │   ├── consulta_debito.py (952.00 B)
+│   │   ├── contabilidade_publica.py (970.00 B)
+│   │   ├── declaracao_impostos.py (964.00 B)
+│   │   ├── emissao_recibo.py (949.00 B)
+│   │   ├── isencao_taxa.py (943.00 B)
+│   │   ├── micro_credito.py (946.00 B)
+│   │   ├── pagamento_taxa.py (949.00 B)
+│   │   ├── parcelamento_debito.py (964.00 B)
+│   │   └── subsidio_habitacao.py (961.00 B)
+│   ├── services/
+│   │   ├── __init__.py (109.00 B)
+│   │   └── payment.py (6.21 KB)
+│   ├── tests/
+│   │   └── __init__.py (106.00 B)
+│   └── utils/
+│       └── __init__.py (106.00 B)
+├── governance/
+│   ├── __init__.py (310.00 B)
+│   ├── models/
+│   │   ├── __init__.py (110.00 B)
+│   │   ├── audit_log.py (1.95 KB)
+│   │   ├── auditoria_log.py (885.00 B)
+│   │   ├── controle_versao.py (889.00 B)
+│   │   ├── gestao_risco.py (883.00 B)
+│   │   └── politica_seguranca.py (895.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (110.00 B)
+│   │   ├── auditoria_log.py (1.86 KB)
+│   │   ├── controle_versao.py (1.94 KB)
+│   │   ├── gestao_risco.py (1.85 KB)
+│   │   └── politica_seguranca.py (2.03 KB)
+│   ├── schemas/
+│   │   ├── __init__.py (111.00 B)
+│   │   ├── auditoria_log.py (946.00 B)
+│   │   ├── controle_versao.py (952.00 B)
+│   │   ├── gestao_risco.py (943.00 B)
+│   │   └── politica_seguranca.py (961.00 B)
+│   ├── services/
+│   │   └── __init__.py (112.00 B)
+│   ├── tests/
+│   │   └── __init__.py (109.00 B)
+│   └── utils/
+│       └── __init__.py (109.00 B)
+├── health/
+│   ├── __init__.py (1.37 KB)
+│   ├── health_services/
+│   │   └── __init__.py (235.00 B)
+│   ├── models/
+│   │   ├── __init__.py (106.00 B)
+│   │   ├── agendamento_consulta.py (896.00 B)
+│   │   ├── agendamento_teleconsulta.py (591.00 B)
+│   │   ├── agendamento_vacinacao.py (898.00 B)
+│   │   ├── avaliacao_nutricional.py (898.00 B)
+│   │   ├── cartao_vacina.py (882.00 B)
+│   │   ├── consulta_telematica.py (894.00 B)
+│   │   ├── emergencia_medica.py (890.00 B)
+│   │   ├── historico_medico.py (888.00 B)
+│   │   ├── seguro_saude.py (880.00 B)
+│   │   ├── solicitacao_exame.py (890.00 B)
+│   │   └── solicitacao_medicamento.py (902.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (106.00 B)
+│   │   ├── agendamento_consulta.py (2.85 KB)
+│   │   ├── agendamento_teleconsulta.py (2.67 KB)
+│   │   ├── agendamento_vacinacao.py (2.82 KB)
+│   │   ├── avaliacao_nutricional.py (2.80 KB)
+│   │   ├── cartao_vacina.py (2.67 KB)
+│   │   ├── consulta_telematica.py (2.74 KB)
+│   │   ├── emergencia_medica.py (2.77 KB)
+│   │   ├── historico_medico.py (2.71 KB)
+│   │   ├── seguro_saude.py (2.62 KB)
+│   │   ├── solicitacao_exame.py (2.79 KB)
+│   │   └── solicitacao_medicamento.py (2.87 KB)
+│   └── tests/
+│       └── __init__.py (105.00 B)
+├── identity/
+│   └── __init__.py (820.00 B)
+├── integration/
+│   ├── __init__.py (1.09 KB)
+│   ├── adapters/
+│   │   ├── __init__.py (20.00 B)
+│   │   └── bna_adapter.py (4.48 KB)
+│   ├── examples/
+│   │   └── __init__.py (20.00 B)
+│   ├── models/
+│   │   ├── __init__.py (115.00 B)
+│   │   ├── a_p_i_gateway.py (884.00 B)
+│   │   ├── conector_externo.py (892.00 B)
+│   │   ├── integration_event.py (613.00 B)
+│   │   ├── sincronizacao_b_n_a.py (896.00 B)
+│   │   └── transformacao_dados.py (898.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (238.00 B)
+│   │   ├── a_p_i_gateway.py (1.53 KB)
+│   │   ├── conector_externo.py (1.65 KB)
+│   │   ├── event_routes.py (3.72 KB)
+│   │   ├── sincronizacao_b_n_a.py (1.70 KB)
+│   │   └── transformacao_dados.py (1.74 KB)
+│   ├── schemas/
+│   │   ├── __init__.py (234.00 B)
+│   │   ├── a_p_i_gateway.py (940.00 B)
+│   │   ├── conector_externo.py (955.00 B)
+│   │   ├── event_schemas.py (864.00 B)
+│   │   ├── sincronizacao_b_n_a.py (958.00 B)
+│   │   └── transformacao_dados.py (964.00 B)
+│   ├── services/
+│   │   ├── __init__.py (105.00 B)
+│   │   └── event_service.py (3.40 KB)
+│   ├── tests/
+│   │   ├── __init__.py (110.00 B)
+│   │   └── test_integration_gateway.py (7.21 KB)
+│   └── utils/
+│       └── __init__.py (110.00 B)
+├── internal/
+│   ├── __init__.py (369.00 B)
+│   ├── models/
+│   │   ├── __init__.py (108.00 B)
+│   │   ├── manutencao_preventiva.py (899.00 B)
+│   │   ├── monitoramento_sistema.py (899.00 B)
+│   │   └── otimizacao_performance.py (901.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (108.00 B)
+│   │   ├── manutencao_preventiva.py (2.12 KB)
+│   │   ├── monitoramento_sistema.py (2.11 KB)
+│   │   └── otimizacao_performance.py (2.18 KB)
+│   ├── services/
+│   │   └── __init__.py (110.00 B)
+│   └── tests/
+│       └── __init__.py (107.00 B)
+├── journeys/
+│   └── __init__.py (451.00 B)
+├── justice/
+│   ├── __init__.py (659.00 B)
+│   ├── models/
+│   │   ├── __init__.py (107.00 B)
+│   │   ├── assistencia_juridica.py (897.00 B)
+│   │   ├── defensor_publico.py (889.00 B)
+│   │   ├── execucao_fiscal.py (887.00 B)
+│   │   ├── habeas_corpus.py (883.00 B)
+│   │   ├── leilao_judicial.py (887.00 B)
+│   │   ├── mandado_seguranca.py (891.00 B)
+│   │   ├── mediacao_conflito.py (891.00 B)
+│   │   ├── penhonha_bens.py (883.00 B)
+│   │   └── registo_criminal.py (889.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (107.00 B)
+│   │   ├── assistencia_juridica.py (2.83 KB)
+│   │   ├── defensor_publico.py (2.62 KB)
+│   │   ├── execucao_fiscal.py (2.58 KB)
+│   │   ├── habeas_corpus.py (2.51 KB)
+│   │   ├── leilao_judicial.py (2.59 KB)
+│   │   ├── mandado_seguranca.py (2.66 KB)
+│   │   ├── mediacao_conflito.py (2.69 KB)
+│   │   ├── penhonha_bens.py (2.52 KB)
+│   │   └── registo_criminal.py (2.61 KB)
+│   ├── services/
+│   │   └── __init__.py (109.00 B)
+│   └── tests/
+│       └── __init__.py (2.00 B)
+├── location/
+│   └── __init__.py (911.00 B)
+├── monitoring/
+│   ├── __init__.py (827.00 B)
+│   └── routes/
+│       ├── health.py (9.96 KB)
+│       ├── metrics.py (8.87 KB)
+│       └── tracing.py (11.84 KB)
+├── notification/
+│   └── __init__.py (1.01 KB)
+├── payment/
+│   └── __init__.py (953.00 B)
+├── registry/
+│   ├── __init__.py (668.00 B)
+│   ├── models/
+│   │   ├── __init__.py (108.00 B)
+│   │   ├── adocao_menor.py (882.00 B)
+│   │   ├── certidao_negativa.py (892.00 B)
+│   │   ├── citizen.py (1.59 KB)
+│   │   ├── reconhecimento_paternidade.py (910.00 B)
+│   │   ├── registo_casamento.py (892.00 B)
+│   │   ├── registo_civil.py (884.00 B)
+│   │   ├── registo_imovel.py (886.00 B)
+│   │   ├── registo_nascimento.py (894.00 B)
+│   │   ├── registo_obito.py (884.00 B)
+│   │   ├── retificacao_registro.py (898.00 B)
+│   │   └── tutela_menor.py (882.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (108.00 B)
+│   │   ├── adocao_menor.py (2.52 KB)
+│   │   ├── certidao_negativa.py (2.67 KB)
+│   │   ├── reconhecimento_paternidade.py (2.96 KB)
+│   │   ├── registo_casamento.py (2.69 KB)
+│   │   ├── registo_civil.py (2.52 KB)
+│   │   ├── registo_imovel.py (2.60 KB)
+│   │   ├── registo_nascimento.py (2.70 KB)
+│   │   ├── registo_obito.py (2.56 KB)
+│   │   ├── retificacao_registro.py (2.79 KB)
+│   │   └── tutela_menor.py (2.52 KB)
+│   ├── schemas/
+│   │   ├── __init__.py (109.00 B)
+│   │   ├── adocao_menor.py (943.00 B)
+│   │   ├── certidao_negativa.py (958.00 B)
+│   │   ├── reconhecimento_paternidade.py (985.00 B)
+│   │   ├── registo_casamento.py (958.00 B)
+│   │   ├── registo_civil.py (946.00 B)
+│   │   ├── registo_imovel.py (949.00 B)
+│   │   ├── registo_nascimento.py (961.00 B)
+│   │   ├── registo_obito.py (946.00 B)
+│   │   ├── retificacao_registro.py (967.00 B)
+│   │   └── tutela_menor.py (943.00 B)
+│   ├── services/
+│   │   └── __init__.py (110.00 B)
+│   ├── tests/
+│   │   └── __init__.py (107.00 B)
+│   └── utils/
+│       └── __init__.py (107.00 B)
+├── reports/
+│   ├── __init__.py (121.00 B)
+│   ├── models/
+│   │   └── __init__.py (107.00 B)
+│   ├── routes/
+│   │   └── __init__.py (107.00 B)
+│   ├── services/
+│   │   └── __init__.py (109.00 B)
+│   └── tests/
+│       └── __init__.py (106.00 B)
+├── sanitation/
+│   ├── __init__.py (599.00 B)
+│   ├── models/
+│   │   ├── __init__.py (110.00 B)
+│   │   ├── agente_sanitario.py (892.00 B)
+│   │   ├── controle_vetores.py (892.00 B)
+│   │   ├── educacao_ambiental.py (896.00 B)
+│   │   ├── esgoto_sanitario.py (892.00 B)
+│   │   ├── limpeza_urbana.py (888.00 B)
+│   │   ├── monitoramento_ambiental.py (906.00 B)
+│   │   └── tratamento_agua.py (890.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (110.00 B)
+│   │   ├── agente_sanitario.py (2.62 KB)
+│   │   ├── controle_vetores.py (2.63 KB)
+│   │   ├── educacao_ambiental.py (2.72 KB)
+│   │   ├── esgoto_sanitario.py (2.62 KB)
+│   │   ├── limpeza_urbana.py (2.55 KB)
+│   │   ├── monitoramento_ambiental.py (2.86 KB)
+│   │   └── tratamento_agua.py (2.61 KB)
+│   ├── services/
+│   │   └── __init__.py (112.00 B)
+│   └── tests/
+│       └── __init__.py (109.00 B)
+├── service_hub/
+│   ├── __init__.py (1.11 KB)
+│   └── tests/
+│       ├── __init__.py (34.00 B)
+│       ├── test_endpoints.py (4.66 KB)
+│       └── test_services.py (5.08 KB)
+├── social/
+│   ├── __init__.py (683.00 B)
+│   ├── models/
+│   │   ├── __init__.py (106.00 B)
+│   │   ├── assistencia_mulher.py (892.00 B)
+│   │   ├── auxilio_social.py (884.00 B)
+│   │   ├── bolsa_familia.py (882.00 B)
+│   │   ├── capacitacao_profissional.py (904.00 B)
+│   │   ├── habitacao_social.py (888.00 B)
+│   │   ├── inclusao_digital.py (888.00 B)
+│   │   ├── programa_idoso.py (884.00 B)
+│   │   ├── protecao_menor.py (884.00 B)
+│   │   ├── reabilitacao_social.py (894.00 B)
+│   │   └── seguranca_alimentar.py (894.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (106.00 B)
+│   │   ├── assistencia_mulher.py (2.71 KB)
+│   │   ├── auxilio_social.py (2.56 KB)
+│   │   ├── bolsa_familia.py (2.62 KB)
+│   │   ├── capacitacao_profissional.py (2.89 KB)
+│   │   ├── habitacao_social.py (2.62 KB)
+│   │   ├── inclusao_digital.py (2.62 KB)
+│   │   ├── programa_idoso.py (2.57 KB)
+│   │   ├── protecao_menor.py (2.58 KB)
+│   │   ├── reabilitacao_social.py (2.74 KB)
+│   │   └── seguranca_alimentar.py (2.70 KB)
+│   ├── services/
+│   │   └── __init__.py (108.00 B)
+│   └── tests/
+│       └── __init__.py (105.00 B)
+├── statistics/
+│   ├── __init__.py (270.00 B)
+│   ├── models/
+│   │   ├── __init__.py (110.00 B)
+│   │   ├── analise_dados.py (885.00 B)
+│   │   ├── dashboard_executivo.py (897.00 B)
+│   │   ├── metricas_uso.py (883.00 B)
+│   │   └── relatorio_k_p_i.py (887.00 B)
+│   ├── routes/
+│   │   ├── __init__.py (110.00 B)
+│   │   ├── analise_dados.py (1.87 KB)
+│   │   ├── dashboard_executivo.py (2.04 KB)
+│   │   ├── metricas_uso.py (1.84 KB)
+│   │   └── relatorio_k_p_i.py (1.87 KB)
+│   ├── services/
+│   │   └── __init__.py (112.00 B)
+│   └── tests/
+│       └── __init__.py (109.00 B)
+├── training/
+│   ├── __init__.py (5.00 KB)
+│   └── routes/
+│       └── training.py (14.82 KB)
+└── urbanism/
+    ├── __init__.py (697.00 B)
+    ├── models/
+    │   ├── __init__.py (108.00 B)
+    │   ├── alvara_funcionamento.py (898.00 B)
+    │   ├── demolicao_edificio.py (894.00 B)
+    │   ├── espaco_publico.py (886.00 B)
+    │   ├── inspecao_obra.py (884.00 B)
+    │   ├── licenca_construcao.py (894.00 B)
+    │   ├── loteamento_urbano.py (892.00 B)
+    │   ├── ocupacao_solo.py (884.00 B)
+    │   ├── plano_urbano.py (882.00 B)
+    │   ├── regularizacao_fundiaria.py (904.00 B)
+    │   └── sinalizacao_trafego.py (896.00 B)
+    ├── routes/
+    │   ├── __init__.py (108.00 B)
+    │   ├── alvara_funcionamento.py (3.05 KB)
+    │   ├── demolicao_edificio.py (2.73 KB)
+    │   ├── espaco_publico.py (2.62 KB)
+    │   ├── inspecao_obra.py (2.59 KB)
+    │   ├── licenca_construcao.py (2.73 KB)
+    │   ├── loteamento_urbano.py (2.65 KB)
+    │   ├── ocupacao_solo.py (2.55 KB)
+    │   ├── plano_urbano.py (2.58 KB)
+    │   ├── regularizacao_fundiaria.py (2.86 KB)
+    │   └── sinalizacao_trafego.py (2.74 KB)
+    ├── services/
+    │   └── __init__.py (110.00 B)
+    └── tests/
+        └── __init__.py (107.00 B)
+
+📦 Tamanho total (curado): 659.43 KB

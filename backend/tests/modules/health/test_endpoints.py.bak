@@ -1,0 +1,284 @@
+"""Testes de integração para os endpoints do módulo de saúde."""
+import pytest
+from unittest.mock import AsyncMock, patch, MagicMock
+from uuid import uuid4
+from datetime import datetime, timedelta
+
+from fastapi import HTTPException, status
+from fastapi.testclient import TestClient
+
+from app.main import app
+from app.modules.health import schemas, services
+from app.modules.auth.schemas import UserInDB, UserRole
+
+
+# Fixture para o cliente de teste
+@pytest.fixture
+def client():
+    """Retorna um cliente de teste configurado."""
+    return TestClient(app)
+
+
+# Fixture para um usuário autenticado
+@pytest.fixture
+def authenticated_user():
+    """Retorna um usuário autenticado para teste."""
+    return UserInDB(
+        id=str(uuid4()),
+        username="testuser",
+        email="test@example.com",
+        hashed_password="hashedpassword",
+        is_active=True,
+        role=UserRole.ADMIN,
+        full_name="Test User"
+    )
+
+
+# Fixture para mockar a autenticação
+@pytest.fixture
+def auth_headers(authenticated_user):
+    """Retorna headers de autenticação para teste."""
+    return {"Authorization": f"Bearer test_token"}
+
+
+class TestHealthEndpoints:
+    """Testes para os endpoints do módulo de saúde."""
+
+    @pytest.mark.asyncio
+    @patch('app.modules.health.endpoints.get_current_active_user')
+    @patch('app.modules.health.services.HealthService.create_health_record')
+    async def test_create_health_record(
+        self, 
+        mock_create_health,
+        mock_current_user,
+        client,
+        auth_headers,
+        authenticated_user,
+        mock_health_record
+    ):
+        """Testa a criação de um registro de saúde via API."""
+        # Configura os mocks
+        mock_current_user.return_value = authenticated_user
+        mock_create_health.return_value = mock_health_record
+        
+        # Dados para a requisição
+        health_data = {
+            "tipo_consulta": "Consulta de rotina",
+            "data_consulta": datetime.utcnow().isoformat(),
+            "diagnostico": "Hipertensão",
+            "tratamento": "Medicação",
+            "observacoes": "Retornar em 30 dias",
+            "cidadao_id": str(uuid4())
+        }
+        
+        # Faz a requisição
+        response = client.post(
+            "/api/health/",
+            json=health_data,
+            headers=auth_headers
+        )
+        
+        # Verifica a resposta
+        assert response.status_code == status.HTTP_201_CREATED
+        assert response.json()["id"] == mock_health_record.id
+        mock_create_health.assert_called_once()
+
+    @pytest.mark.asyncio
+    @patch('app.modules.health.endpoints.get_current_active_user')
+    @patch('app.modules.health.services.HealthService.get_health_record')
+    async def test_get_health_record(
+        self, 
+        mock_get_health,
+        mock_current_user,
+        client,
+        auth_headers,
+        authenticated_user,
+        mock_health_record
+    ):
+        """Testa a busca de um registro de saúde por ID via API."""
+        # Configura os mocks
+        mock_current_user.return_value = authenticated_user
+        mock_get_health.return_value = mock_health_record
+        
+        # ID para teste
+        health_id = uuid4()
+        
+        # Faz a requisição
+        response = client.get(
+            f"/api/health/{health_id}",
+            headers=auth_headers
+        )
+        
+        # Verifica a resposta
+        assert response.status_code == status.HTTP_200_OK
+        assert response.json()["id"] == mock_health_record.id
+        mock_get_health.assert_called_once_with(health_id)
+
+    @pytest.mark.asyncio
+    @patch('app.modules.health.endpoints.get_current_active_user')
+    @patch('app.modules.health.services.HealthService.get_health_record')
+    async def test_get_health_record_not_found(
+        self, 
+        mock_get_health,
+        mock_current_user,
+        client,
+        auth_headers,
+        authenticated_user
+    ):
+        """Testa a busca de um registro de saúde inexistente."""
+        # Configura os mocks
+        mock_current_user.return_value = authenticated_user
+        mock_get_health.side_effect = HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Registro de saúde não encontrado"
+        )
+        
+        # ID para teste
+        health_id = uuid4()
+        
+        # Faz a requisição
+        response = client.get(
+            f"/api/health/{health_id}",
+            headers=auth_headers
+        )
+        
+        # Verifica a resposta
+        assert response.status_code == status.HTTP_404_NOT_FOUND
+        assert "Registro de saúde não encontrado" in response.json()["detail"]
+
+    @pytest.mark.asyncio
+    @patch('app.modules.health.endpoints.get_current_active_user')
+    @patch('app.modules.health.services.HealthService.update_health_record')
+    async def test_update_health_record(
+        self, 
+        mock_update_health,
+        mock_current_user,
+        client,
+        auth_headers,
+        authenticated_user,
+        mock_health_record
+    ):
+        """Testa a atualização de um registro de saúde via API."""
+        # Configura os mocks
+        mock_current_user.return_value = authenticated_user
+        mock_update_health.return_value = mock_health_record
+        
+        # Dados para atualização
+        health_id = uuid4()
+        update_data = {
+            "tipo_consulta": "Retorno",
+            "diagnostico": "Melhora do quadro"
+        }
+        
+        # Faz a requisição
+        response = client.put(
+            f"/api/health/{health_id}",
+            json=update_data,
+            headers=auth_headers
+        )
+        
+        # Verifica a resposta
+        assert response.status_code == status.HTTP_200_OK
+        assert response.json()["id"] == mock_health_record.id
+        mock_update_health.assert_called_once()
+
+    @pytest.mark.asyncio
+    @patch('app.modules.health.endpoints.get_current_active_user')
+    @patch('app.modules.health.services.HealthService.delete_health_record')
+    async def test_delete_health_record(
+        self, 
+        mock_delete_health,
+        mock_current_user,
+        client,
+        auth_headers,
+        authenticated_user
+    ):
+        """Testa a exclusão de um registro de saúde via API."""
+        # Configura os mocks
+        mock_current_user.return_value = authenticated_user
+        mock_delete_health.return_value = True
+        
+        # ID para teste
+        health_id = uuid4()
+        
+        # Faz a requisição
+        response = client.delete(
+            f"/api/health/{health_id}",
+            headers=auth_headers
+        )
+        
+        # Verifica a resposta
+        assert response.status_code == status.HTTP_204_NO_CONTENT
+        mock_delete_health.assert_called_once_with(health_id)
+
+    @pytest.mark.asyncio
+    @patch('app.modules.health.endpoints.get_current_active_user')
+    @patch('app.modules.health.services.HealthService.get_citizen_health_records')
+    async def test_get_citizen_health_records(
+        self, 
+        mock_get_records,
+        mock_current_user,
+        client,
+        auth_headers,
+        authenticated_user,
+        mock_health_record
+    ):
+        """Testa a busca de registros de saúde de um cidadão via API."""
+        # Configura os mocks
+        mock_current_user.return_value = authenticated_user
+        mock_get_records.return_value = [mock_health_record]
+        
+        # ID do cidadão para teste
+        cidadao_id = uuid4()
+        
+        # Faz a requisição
+        response = client.get(
+            f"/api/health/cidadao/{cidadao_id}",
+            headers=auth_headers
+        )
+        
+        # Verifica a resposta
+        assert response.status_code == status.HTTP_200_OK
+        assert len(response.json()) == 1
+        assert response.json()[0]["id"] == mock_health_record.id
+        mock_get_records.assert_called_once_with(cidadao_id)
+
+    @pytest.mark.asyncio
+    @patch('app.modules.health.endpoints.get_current_active_user')
+    @patch('app.modules.health.services.HealthService.get_recent_health_metrics')
+    async def test_get_recent_health_metrics(
+        self, 
+        mock_get_metrics,
+        mock_current_user,
+        client,
+        auth_headers,
+        authenticated_user
+    ):
+        """Testa a obtenção de métricas recentes de saúde via API."""
+        # Configura os mocks
+        mock_current_user.return_value = authenticated_user
+        mock_metrics = {
+            "period": {
+                "start": (datetime.utcnow() - timedelta(days=30)).isoformat(),
+                "end": datetime.utcnow().isoformat()
+            },
+            "total_consultas": 10,
+            "consultas_por_tipo": {"Rotina": 5, "Emergência": 5},
+            "media_consultas_por_dia": 0.33,
+            "diagnosticos_comuns": ["Hipertensão", "Resfriado"]
+        }
+        mock_get_metrics.return_value = mock_metrics
+        
+        # Faz a requisição
+        response = client.get(
+            "/api/health/metrics/recent",
+            params={"days": 30},
+            headers=auth_headers
+        )
+        
+        # Verifica a resposta
+        assert response.status_code == status.HTTP_200_OK
+        assert response.json()["total_consultas"] == 10
+        assert len(response.json()["consultas_por_tipo"]) == 2
+        mock_get_metrics.assert_called_once_with(30)
+

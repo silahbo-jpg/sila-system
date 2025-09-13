@@ -1,0 +1,7 @@
+Pydantic Model Test Results
+==================================================
+
+AtualizacaoBICreate: PASSED
+AtualizacaoBIRead: PASSED
+AtualizacaoBIUpdate: PASSED
+AtualizacaoBIList: PASSED

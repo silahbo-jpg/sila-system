@@ -1,0 +1,192 @@
+module,service_key,service_name_pt,service_name_en,service_type
+# Citizen-Facing Services (120 total)
+# Health Module (10 services)
+health,AgendamentoConsulta,Agendamento de Consulta Médica,Medical Appointment Booking,citizen
+health,SolicitacaoExame,Solicitação de Exame Laboratorial,Laboratory Test Request,citizen
+health,AgendamentoVacinacao,Agendamento de Vacinação,Vaccination Scheduling,citizen
+health,CartaoVacina,Cartão de Vacinação Digital,Digital Vaccination Card,citizen
+health,ConsultaTelematica,Teleconsulta Médica,Telemedicine Consultation,citizen
+health,SolicitacaoMedicamento,Solicitação de Medicamento,Medication Request,citizen
+health,HistoricoMedico,Histórico Médico Digital,Digital Medical History,citizen
+health,SeguroSaude,Seguro de Saúde Municipal,Municipal Health Insurance,citizen
+health,EmergenciaMedica,Serviço de Emergência Médica,Medical Emergency Service,citizen
+health,AvaliacaoNutricional,Avaliação Nutricional,Nutritional Assessment,citizen
+
+# Education Module (10 services)
+education,MatriculaEscolar,Matrícula Escolar,School Enrollment,citizen
+education,TransferenciaEscolar,Transferência Escolar,School Transfer,citizen
+education,BolsaEstudo,Bolsa de Estudo Municipal,Municipal Study Grant,citizen
+education,TransporteEscolar,Transporte Escolar,School Transportation,citizen
+education,MerendaEscolar,Merenda Escolar,School Meals Program,citizen
+education,HistoricoEscolar,Histórico Escolar Digital,Digital Academic Record,citizen
+education,CursoTecnico,Curso Técnico Municipal,Municipal Technical Course,citizen
+education,AlfabetizacaoAdulto,Alfabetização de Adultos,Adult Literacy Program,citizen
+education,EnsinoSuperior,Apoio ao Ensino Superior,Higher Education Support,citizen
+education,EducacaoEspecial,Educação Especial,Special Education,citizen
+
+# Citizenship Module (10 services)
+citizenship,EmissaoBI,Emissão de Bilhete de Identidade,Identity Card Issuance,citizen
+citizenship,AtualizacaoBI,Atualização de Bilhete de Identidade,Identity Card Update,citizen
+citizenship,EmissaoPassaporte,Emissão de Passaporte,Passport Issuance,citizen
+citizenship,AtualizacaoEndereco,Atualização de Endereço,Address Update,citizen
+citizenship,DeclaracaoResidencia,Declaração de Residência,Residence Declaration,citizen
+citizenship,CertidaoNascimento,Certidão de Nascimento,Birth Certificate,citizen
+citizenship,CertidaoObito,Certidão de Óbito,Death Certificate,citizen
+citizenship,CertidaoCasamento,Certidão de Casamento,Marriage Certificate,citizen
+citizenship,RegitroEleitoral,Registro Eleitoral,Electoral Registration,citizen
+citizenship,VistoPermanencia,Visto de Permanência,Permanent Residence Visa,citizen
+
+# Finance Module (10 services)
+finance,PagamentoTaxa,Pagamento de Taxa Municipal,Municipal Tax Payment,citizen
+finance,ConsultaDebito,Consulta de Débitos,Debt Inquiry,citizen
+finance,ParcelamentoDebito,Parcelamento de Débitos,Debt Installment,citizen
+finance,IsencaoTaxa,Isenção de Taxa,Tax Exemption,citizen
+finance,EmissaoRecibo,Emissão de Recibo,Receipt Issuance,citizen
+finance,DeclaracaoImpostos,Declaração de Impostos,Tax Declaration,citizen
+finance,MicroCredito,Microcrédito Municipal,Municipal Microcredit,citizen
+finance,SubsidioHabitacao,Subsídio de Habitação,Housing Subsidy,citizen
+finance,ApoioEmpreendedor,Apoio ao Empreendedor,Entrepreneur Support,citizen
+finance,ContabilidadePublica,Contabilidade Pública,Public Accounting,citizen
+
+# Urbanism Module (10 services)
+urbanism,LicencaConstrucao,Licença de Construção,Construction License,citizen
+urbanism,AlvaraFuncionamento,Alvará de Funcionamento,Operating Permit,citizen
+urbanism,PlanoUrbano,Plano Urbano Municipal,Municipal Urban Plan,citizen
+urbanism,OcupacaoSolo,Ocupação de Solo,Land Occupation,citizen
+urbanism,DemolicaoEdificio,Demolição de Edifício,Building Demolition,citizen
+urbanism,InspecaoObra,Inspeção de Obra,Construction Inspection,citizen
+urbanism,LoteamentoUrbano,Loteamento Urbano,Urban Subdivision,citizen
+urbanism,RegularizacaoFundiaria,Regularização Fundiária,Land Regularization,citizen
+urbanism,EspacoPublico,Uso de Espaço Público,Public Space Usage,citizen
+urbanism,SinalizacaoTrafego,Sinalização de Tráfego,Traffic Signage,citizen
+
+# Justice Module (10 services)
+justice,MediacaoConflito,Mediação de Conflitos,Conflict Mediation,citizen
+justice,AssistenciaJuridica,Assistência Jurídica Gratuita,Free Legal Assistance,citizen
+justice,RegistoCriminal,Registo Criminal,Criminal Record,citizen
+justice,HabeasCorpus,Habeas Corpus,Habeas Corpus,citizen
+justice,MandadoSeguranca,Mandado de Segurança,Security Order,citizen
+justice,DefensorPublico,Defensor Público,Public Defender,citizen
+justice,CartorioDistribuidorr,Cartório Distribuidor,Distribution Office,citizen
+justice,ExecucaoFiscal,Execução Fiscal,Tax Execution,citizen
+justice,PenhonhaBens,Penhora de Bens,Asset Seizure,citizen
+justice,LeilaoJudicial,Leilão Judicial,Judicial Auction,citizen
+
+# Social Module (10 services)
+social,AuxilioSocial,Auxílio Social,Social Assistance,citizen
+social,BolsaFamilia,Bolsa Família Municipal,Municipal Family Grant,citizen
+social,ProgramaIdoso,Programa do Idoso,Elderly Program,citizen
+social,ProtecaoMenor,Proteção ao Menor,Child Protection,citizen
+social,AssistenciaMulher,Assistência à Mulher,Women's Assistance,citizen
+social,ReabilitacaoSocial,Reabilitação Social,Social Rehabilitation,citizen
+social,InclusaoDigital,Inclusão Digital,Digital Inclusion,citizen
+social,CapacitacaoProfissional,Capacitação Profissional,Professional Training,citizen
+social,HabitacaoSocial,Habitação Social,Social Housing,citizen
+social,SegurancaAlimentar,Segurança Alimentar,Food Security,citizen
+
+# Complaints Module (10 services)
+complaints,DenunciaCidada,Denúncia Cidadã,Citizen Report,citizen
+complaints,OuvidoriaMunicipal,Ouvidoria Municipal,Municipal Ombudsman,citizen
+complaints,ReclamacaoServico,Reclamação de Serviço,Service Complaint,citizen
+complaints,SugestaoMelhoria,Sugestão de Melhoria,Improvement Suggestion,citizen
+complaints,FiscalizacaoObra,Fiscalização de Obra,Construction Oversight,citizen
+complaints,DenunciaAmbiental,Denúncia Ambiental,Environmental Report,citizen
+complaints,ViolacaoDireitos,Violação de Direitos,Rights Violation,citizen
+complaints,CorrupcaoAdministrativa,Corrupção Administrativa,Administrative Corruption,citizen
+complaints,MauAtendimento,Mau Atendimento,Poor Service,citizen
+complaints,IrregularidadeFiscal,Irregularidade Fiscal,Tax Irregularity,citizen
+
+# Commercial Module (10 services)
+commercial,AlvaraComercial,Alvará Comercial,Commercial License,citizen
+commercial,RegistoEmpresa,Registo de Empresa,Business Registration,citizen
+commercial,LicencaIndustrial,Licença Industrial,Industrial License,citizen
+commercial,CertificacaoOrigem,Certificação de Origem,Origin Certification,citizen
+commercial,InspecaoSanitaria,Inspeção Sanitária,Sanitary Inspection,citizen
+commercial,RegistoMarca,Registo de Marca,Trademark Registration,citizen
+commercial,LicencaImportacao,Licença de Importação,Import License,citizen
+commercial,FiscalizacaoMercado,Fiscalização de Mercado,Market Inspection,citizen
+commercial,TaxaComercial,Taxa Comercial,Commercial Tax,citizen
+commercial,ContratoPublico,Contrato Público,Public Contract,citizen
+
+# Sanitation Module (10 services)
+sanitation,ColectaLixo,Coleta de Lixo,Waste Collection,citizen
+sanitation,LimpezaUrbana,Limpeza Urbana,Urban Cleaning,citizen
+sanitation,TratamentoAgua,Tratamento de Água,Water Treatment,citizen
+sanitation,EsgotoSanitario,Esgoto Sanitário,Sanitary Sewage,citizen
+sanitation,ControleVetores,Controle de Vetores,Vector Control,citizen
+sanitation,Desinsetizacao,Desinsetização,Pest Control,citizen
+sanitation,EducacaoAmbiental,Educação Ambiental,Environmental Education,citizen
+sanitation,ReciclagemLixo,Reciclagem de Lixo,Waste Recycling,citizen
+sanitation,AgenteSanitario,Agente Sanitário,Sanitary Agent,citizen
+sanitation,MonitoramentoAmbiental,Monitoramento Ambiental,Environmental Monitoring,citizen
+
+# Registry Module (10 services)
+registry,RegistoCivil,Registo Civil,Civil Registry,citizen
+registry,RegistoNascimento,Registo de Nascimento,Birth Registration,citizen
+registry,RegistoCasamento,Registo de Casamento,Marriage Registration,citizen
+registry,RegistoObito,Registo de Óbito,Death Registration,citizen
+registry,AdocaoMenor,Adoção de Menor,Child Adoption,citizen
+registry,TutelaMenor,Tutela de Menor,Child Guardianship,citizen
+registry,ReconhecimentoPaternidade,Reconhecimento de Paternidade,Paternity Recognition,citizen
+registry,RetificacaoRegistro,Retificação de Registro,Record Rectification,citizen
+registry,CertidaoNegativa,Certidão Negativa,Negative Certificate,citizen
+registry,RegistoImovel,Registo de Imóvel,Property Registration,citizen
+
+# Service Hub Module (10 services)
+service_hub,JornadaCidada,Jornada Cidadã,Citizen Journey,citizen
+service_hub,PortalUnico,Portal Único de Serviços,Single Service Portal,citizen
+service_hub,AtendimentoIntegrado,Atendimento Integrado,Integrated Service,citizen
+service_hub,AgendamentoUnificado,Agendamento Unificado,Unified Scheduling,citizen
+service_hub,StatusSolicitacao,Status de Solicitação,Request Status,citizen
+service_hub,NotificacaoCidadao,Notificação ao Cidadão,Citizen Notification,citizen
+service_hub,CanalComunicacao,Canal de Comunicação,Communication Channel,citizen
+service_hub,SuporteTecnico,Suporte Técnico,Technical Support,citizen
+service_hub,TutorialServico,Tutorial de Serviço,Service Tutorial,citizen
+service_hub,AvaliacaoServico,Avaliação de Serviço,Service Evaluation,citizen
+
+# Internal/Technical Services (30 total)
+# Auth Module (4 services)
+auth,GestaoUsuario,Gestão de Usuários,User Management,internal
+auth,ControleAcesso,Controle de Acesso,Access Control,internal
+auth,AutenticacaoMultifator,Autenticação Multifator,Multi-factor Authentication,internal
+auth,SessaoSegura,Sessão Segura,Secure Session,internal
+
+# Common Module (4 services)  
+common,CacheDistribuido,Cache Distribuído,Distributed Cache,internal
+common,LogSistema,Log do Sistema,System Logging,internal
+common,ConfiguracaoGlobal,Configuração Global,Global Configuration,internal
+common,ValidadorFormulario,Validador de Formulário,Form Validator,internal
+
+# Governance Module (4 services)
+governance,AuditoriaLog,Auditoria de Log,Audit Logging,internal
+governance,ControleVersao,Controle de Versão,Version Control,internal
+governance,PoliticaSeguranca,Política de Segurança,Security Policy,internal
+governance,GestaoRisco,Gestão de Risco,Risk Management,internal
+
+# Integration Module (4 services)
+integration,SincronizacaoBNA,Sincronização BNA,BNA Synchronization,internal
+integration,APIGateway,Gateway de API,API Gateway,internal
+integration,ConectorExterno,Conector Externo,External Connector,internal
+integration,TransformacaoDados,Transformação de Dados,Data Transformation,internal
+
+# Internal Module (4 services)
+internal,MonitoramentoSistema,Monitoramento do Sistema,System Monitoring,internal
+internal,BackupAutomatico,Backup Automático,Automatic Backup,internal
+internal,ManutencaoPreventiva,Manutenção Preventiva,Preventive Maintenance,internal
+internal,OtimizacaoPerformance,Otimização de Performance,Performance Optimization,internal
+
+# Statistics Module (4 services)
+statistics,RelatorioKPI,Relatório de KPI,KPI Report,internal
+statistics,AnaliseDados,Análise de Dados,Data Analysis,internal
+statistics,DashboardExecutivo,Dashboard Executivo,Executive Dashboard,internal
+statistics,MetricasUso,Métricas de Uso,Usage Metrics,internal
+
+# Documents Module (3 services)
+documents,GeradorDocumento,Gerador de Documento,Document Generator,internal
+documents,TemplateDocumento,Template de Documento,Document Template,internal
+documents,AssinaturaDigital,Assinatura Digital,Digital Signature,internal
+
+# Address Module (3 services)
+address,GeocodificacaoEndereco,Geocodificação de Endereço,Address Geocoding,internal
+address,ValidacaoCEP,Validação de CEP,ZIP Code Validation,internal
+address,NormalizacaoEndereco,Normalização de Endereço,Address Normalization,internal

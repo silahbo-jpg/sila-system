@@ -1,0 +1,650 @@
+# Kubernetes namespace for SILA system
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: sila-system
+  labels:
+    name: sila-system
+    project: digital-government
+---
+# ConfigMap for SILA configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sila-config
+  namespace: sila-system
+data:
+  DATABASE_HOST: "sila-postgres.sila-system.svc.cluster.local"
+  DATABASE_PORT: "5432"
+  DATABASE_NAME: "sila"
+  REDIS_HOST: "sila-redis.sila-system.svc.cluster.local"
+  REDIS_PORT: "6379"
+  MINIO_ENDPOINT: "sila-minio.sila-system.svc.cluster.local:9000"
+  ENVIRONMENT: "production"
+  LOG_LEVEL: "INFO"
+  JAEGER_ENDPOINT: "http://sila-jaeger.sila-system.svc.cluster.local:14268"
+  PROMETHEUS_GATEWAY: "sila-prometheus.sila-system.svc.cluster.local:9090"
+---
+# Secret for sensitive configuration
+apiVersion: v1
+kind: Secret
+metadata:
+  name: sila-secrets
+  namespace: sila-system
+type: Opaque
+data:
+  SECRET_KEY: <base64-encoded-secret-key>
+  POSTGRES_PASSWORD: <base64-encoded-postgres-password>
+  REDIS_PASSWORD: <base64-encoded-redis-password>
+  MINIO_ACCESS_KEY: <base64-encoded-minio-access-key>
+  MINIO_SECRET_KEY: <base64-encoded-minio-secret-key>
+  JWT_SECRET: <base64-encoded-jwt-secret>
+---
+# PostgreSQL Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sila-postgres
+  namespace: sila-system
+  labels:
+    app: sila-postgres
+    tier: database
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sila-postgres
+  template:
+    metadata:
+      labels:
+        app: sila-postgres
+        tier: database
+    spec:
+      containers:
+      - name: postgres
+        image: postgres:15-alpine
+        ports:
+        - containerPort: 5432
+        env:
+        - name: POSTGRES_DB
+          valueFrom:
+            configMapKeyRef:
+              name: sila-config
+              key: DATABASE_NAME
+        - name: POSTGRES_USER
+          value: "postgres"
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: sila-secrets
+              key: POSTGRES_PASSWORD
+        - name: POSTGRES_INITDB_ARGS
+          value: "--encoding=UTF-8 --lc-collate=C --lc-ctype=C"
+        volumeMounts:
+        - name: postgres-storage
+          mountPath: /var/lib/postgresql/data
+        - name: postgres-init
+          mountPath: /docker-entrypoint-initdb.d
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "200m"
+          limits:
+            memory: "1Gi"
+            cpu: "1000m"
+        livenessProbe:
+          exec:
+            command:
+            - pg_isready
+            - -U
+            - postgres
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          exec:
+            command:
+            - pg_isready
+            - -U
+            - postgres
+          initialDelaySeconds: 5
+          periodSeconds: 5
+      volumes:
+      - name: postgres-storage
+        persistentVolumeClaim:
+          claimName: sila-postgres-pvc
+      - name: postgres-init
+        configMap:
+          name: postgres-init-scripts
+---
+# PostgreSQL Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: sila-postgres
+  namespace: sila-system
+  labels:
+    app: sila-postgres
+spec:
+  ports:
+  - port: 5432
+    targetPort: 5432
+  selector:
+    app: sila-postgres
+  type: ClusterIP
+---
+# PostgreSQL PVC
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: sila-postgres-pvc
+  namespace: sila-system
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+  storageClassName: fast-ssd
+---
+# Redis Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sila-redis
+  namespace: sila-system
+  labels:
+    app: sila-redis
+    tier: cache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sila-redis
+  template:
+    metadata:
+      labels:
+        app: sila-redis
+        tier: cache
+    spec:
+      containers:
+      - name: redis
+        image: redis:7-alpine
+        ports:
+        - containerPort: 6379
+        command:
+        - redis-server
+        - --appendonly
+        - "yes"
+        - --requirepass
+        - $(REDIS_PASSWORD)
+        env:
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: sila-secrets
+              key: REDIS_PASSWORD
+        volumeMounts:
+        - name: redis-storage
+          mountPath: /data
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        livenessProbe:
+          exec:
+            command:
+            - redis-cli
+            - ping
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          exec:
+            command:
+            - redis-cli
+            - ping
+          initialDelaySeconds: 5
+          periodSeconds: 5
+      volumes:
+      - name: redis-storage
+        persistentVolumeClaim:
+          claimName: sila-redis-pvc
+---
+# Redis Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: sila-redis
+  namespace: sila-system
+  labels:
+    app: sila-redis
+spec:
+  ports:
+  - port: 6379
+    targetPort: 6379
+  selector:
+    app: sila-redis
+  type: ClusterIP
+---
+# Redis PVC
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: sila-redis-pvc
+  namespace: sila-system
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: fast-ssd
+---
+# SILA Backend Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sila-backend
+  namespace: sila-system
+  labels:
+    app: sila-backend
+    tier: application
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sila-backend
+  template:
+    metadata:
+      labels:
+        app: sila-backend
+        tier: application
+    spec:
+      containers:
+      - name: sila-backend
+        image: sila/backend:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DATABASE_URL
+          value: "postgresql://postgres:$(POSTGRES_PASSWORD)@$(DATABASE_HOST):$(DATABASE_PORT)/$(DATABASE_NAME)"
+        - name: SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: sila-secrets
+              key: SECRET_KEY
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: sila-secrets
+              key: POSTGRES_PASSWORD
+        - name: DATABASE_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: sila-config
+              key: DATABASE_HOST
+        - name: DATABASE_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: sila-config
+              key: DATABASE_PORT
+        - name: DATABASE_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: sila-config
+              key: DATABASE_NAME
+        - name: REDIS_URL
+          value: "redis://:$(REDIS_PASSWORD)@$(REDIS_HOST):$(REDIS_PORT)/0"
+        - name: REDIS_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: sila-config
+              key: REDIS_HOST
+        - name: REDIS_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: sila-config
+              key: REDIS_PORT
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: sila-secrets
+              key: REDIS_PASSWORD
+        - name: ENVIRONMENT
+          valueFrom:
+            configMapKeyRef:
+              name: sila-config
+              key: ENVIRONMENT
+        - name: JAEGER_ENDPOINT
+          valueFrom:
+            configMapKeyRef:
+              name: sila-config
+              key: JAEGER_ENDPOINT
+        volumeMounts:
+        - name: uploads
+          mountPath: /app/uploads
+        - name: logs
+          mountPath: /app/logs
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "2000m"
+        livenessProbe:
+          httpGet:
+            path: /monitoring/health/liveness
+            port: 8000
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /monitoring/health/readiness
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+      volumes:
+      - name: uploads
+        persistentVolumeClaim:
+          claimName: sila-uploads-pvc
+      - name: logs
+        persistentVolumeClaim:
+          claimName: sila-logs-pvc
+---
+# SILA Backend Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: sila-backend
+  namespace: sila-system
+  labels:
+    app: sila-backend
+spec:
+  ports:
+  - port: 8000
+    targetPort: 8000
+    name: http
+  selector:
+    app: sila-backend
+  type: ClusterIP
+---
+# SILA Frontend Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sila-frontend
+  namespace: sila-system
+  labels:
+    app: sila-frontend
+    tier: frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sila-frontend
+  template:
+    metadata:
+      labels:
+        app: sila-frontend
+        tier: frontend
+    spec:
+      containers:
+      - name: sila-frontend
+        image: sila/frontend:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: REACT_APP_API_URL
+          value: "https://sila.gov.ao/api"
+        - name: REACT_APP_ENVIRONMENT
+          value: "production"
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "200m"
+          limits:
+            memory: "1Gi"
+            cpu: "1000m"
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 30
+          periodSeconds: 30
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 10
+          periodSeconds: 10
+---
+# SILA Frontend Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: sila-frontend
+  namespace: sila-system
+  labels:
+    app: sila-frontend
+spec:
+  ports:
+  - port: 3000
+    targetPort: 3000
+    name: http
+  selector:
+    app: sila-frontend
+  type: ClusterIP
+---
+# Ingress for SILA system
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sila-ingress
+  namespace: sila-system
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/rate-limit: "100"
+    nginx.ingress.kubernetes.io/rate-limit-window: "1m"
+spec:
+  tls:
+  - hosts:
+    - sila.gov.ao
+    - api.sila.gov.ao
+    secretName: sila-tls-secret
+  rules:
+  - host: sila.gov.ao
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sila-frontend
+            port:
+              number: 3000
+  - host: api.sila.gov.ao
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sila-backend
+            port:
+              number: 8000
+---
+# Horizontal Pod Autoscaler for Backend
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: sila-backend-hpa
+  namespace: sila-system
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: sila-backend
+  minReplicas: 3
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+      - type: Percent
+        value: 10
+        periodSeconds: 60
+    scaleUp:
+      stabilizationWindowSeconds: 0
+      policies:
+      - type: Percent
+        value: 100
+        periodSeconds: 15
+      - type: Pods
+        value: 4
+        periodSeconds: 15
+      selectPolicy: Max
+---
+# HPA for Frontend
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: sila-frontend-hpa
+  namespace: sila-system
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: sila-frontend
+  minReplicas: 2
+  maxReplicas: 6
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+---
+# Network Policy for security
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: sila-network-policy
+  namespace: sila-system
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: nginx-ingress
+    - namespaceSelector:
+        matchLabels:
+          name: monitoring
+  - from:
+    - podSelector:
+        matchLabels:
+          tier: frontend
+    ports:
+    - protocol: TCP
+      port: 8000
+  - from:
+    - podSelector:
+        matchLabels:
+          tier: application
+    ports:
+    - protocol: TCP
+      port: 5432
+    - protocol: TCP
+      port: 6379
+  egress:
+  - to: []
+    ports:
+    - protocol: TCP
+      port: 53
+    - protocol: UDP
+      port: 53
+  - to:
+    - podSelector:
+        matchLabels:
+          tier: database
+    ports:
+    - protocol: TCP
+      port: 5432
+  - to:
+    - podSelector:
+        matchLabels:
+          tier: cache
+    ports:
+    - protocol: TCP
+      port: 6379
+---
+# Service Monitor for Prometheus
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: sila-backend-metrics
+  namespace: sila-system
+  labels:
+    app: sila-backend
+spec:
+  selector:
+    matchLabels:
+      app: sila-backend
+  endpoints:
+  - port: http
+    path: /monitoring/metrics/prometheus
+    interval: 30s
+    scrapeTimeout: 10s
+---
+# PVC for uploads
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: sila-uploads-pvc
+  namespace: sila-system
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 50Gi
+  storageClassName: shared-storage
+---
+# PVC for logs
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: sila-logs-pvc
+  namespace: sila-system
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 20Gi
+  storageClassName: shared-storage

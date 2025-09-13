@@ -1,0 +1,883 @@
+{
+  "address": {
+    "display_name": "Address",
+    "module_path": "app\\modules\\address",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "appointments": {
+    "display_name": "Appointments",
+    "module_path": "app\\modules\\appointments",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "auth": {
+    "display_name": "Auth",
+    "module_path": "app\\modules\\auth",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "citizenship": {
+    "display_name": "Citizenship",
+    "module_path": "app\\modules\\citizenship",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "commercial": {
+    "display_name": "Commercial",
+    "module_path": "app\\modules\\commercial",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "common": {
+    "display_name": "Common",
+    "module_path": "app\\modules\\common",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "complaints": {
+    "display_name": "Complaints",
+    "module_path": "app\\modules\\complaints",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "documents": {
+    "display_name": "Documents",
+    "module_path": "app\\modules\\documents",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "education": {
+    "display_name": "Education",
+    "module_path": "app\\modules\\education",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "finance": {
+    "display_name": "Finance",
+    "module_path": "app\\modules\\finance",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "governance": {
+    "display_name": "Governance",
+    "module_path": "app\\modules\\governance",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "health": {
+    "display_name": "Health",
+    "module_path": "app\\modules\\health",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "integration": {
+    "display_name": "Integration",
+    "module_path": "app\\modules\\integration",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "internal": {
+    "display_name": "Internal",
+    "module_path": "app\\modules\\internal",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "journeys": {
+    "display_name": "Journeys",
+    "module_path": "app\\modules\\journeys",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "justice": {
+    "display_name": "Justice",
+    "module_path": "app\\modules\\justice",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "monitoring": {
+    "display_name": "Monitoring",
+    "module_path": "app\\modules\\monitoring",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "registry": {
+    "display_name": "Registry",
+    "module_path": "app\\modules\\registry",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "reports": {
+    "display_name": "Reports",
+    "module_path": "app\\modules\\reports",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "sanitation": {
+    "display_name": "Sanitation",
+    "module_path": "app\\modules\\sanitation",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "service_hub": {
+    "display_name": "Service hub",
+    "module_path": "app\\modules\\service_hub",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "social": {
+    "display_name": "Social",
+    "module_path": "app\\modules\\social",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "statistics": {
+    "display_name": "Statistics",
+    "module_path": "app\\modules\\statistics",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "training": {
+    "display_name": "Training",
+    "module_path": "app\\modules\\training",
+    "total_endpoints": 0,
+    "services": [],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "no_endpoints"
+  },
+  "urbanism": {
+    "display_name": "Urbanism",
+    "module_path": "app\\modules\\urbanism",
+    "total_endpoints": 40,
+    "services": [
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "POST"
+        ],
+        "function_name": "criar_alvara_funcionamento",
+        "description": "Create new Operating Permit / Criar novo Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "obter_alvara_funcionamento",
+        "description": "Get Operating Permit by ID / Obter Alvará de Funcionamento por ID",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "listar_alvara_funcionamento",
+        "description": "List Operating Permit / Listar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "PUT"
+        ],
+        "function_name": "atualizar_alvara_funcionamento",
+        "description": "Update Operating Permit / Atualizar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "POST"
+        ],
+        "function_name": "criar_alvara_funcionamento",
+        "description": "Create new Operating Permit / Criar novo Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "obter_alvara_funcionamento",
+        "description": "Get Operating Permit by ID / Obter Alvará de Funcionamento por ID",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "listar_alvara_funcionamento",
+        "description": "List Operating Permit / Listar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "PUT"
+        ],
+        "function_name": "atualizar_alvara_funcionamento",
+        "description": "Update Operating Permit / Atualizar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "POST"
+        ],
+        "function_name": "criar_alvara_funcionamento",
+        "description": "Create new Operating Permit / Criar novo Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "obter_alvara_funcionamento",
+        "description": "Get Operating Permit by ID / Obter Alvará de Funcionamento por ID",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "listar_alvara_funcionamento",
+        "description": "List Operating Permit / Listar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "PUT"
+        ],
+        "function_name": "atualizar_alvara_funcionamento",
+        "description": "Update Operating Permit / Atualizar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "POST"
+        ],
+        "function_name": "criar_alvara_funcionamento",
+        "description": "Create new Operating Permit / Criar novo Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "obter_alvara_funcionamento",
+        "description": "Get Operating Permit by ID / Obter Alvará de Funcionamento por ID",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "listar_alvara_funcionamento",
+        "description": "List Operating Permit / Listar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "PUT"
+        ],
+        "function_name": "atualizar_alvara_funcionamento",
+        "description": "Update Operating Permit / Atualizar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "POST"
+        ],
+        "function_name": "criar_alvara_funcionamento",
+        "description": "Create new Operating Permit / Criar novo Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "obter_alvara_funcionamento",
+        "description": "Get Operating Permit by ID / Obter Alvará de Funcionamento por ID",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "listar_alvara_funcionamento",
+        "description": "List Operating Permit / Listar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "PUT"
+        ],
+        "function_name": "atualizar_alvara_funcionamento",
+        "description": "Update Operating Permit / Atualizar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "POST"
+        ],
+        "function_name": "criar_alvara_funcionamento",
+        "description": "Create new Operating Permit / Criar novo Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "obter_alvara_funcionamento",
+        "description": "Get Operating Permit by ID / Obter Alvará de Funcionamento por ID",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "listar_alvara_funcionamento",
+        "description": "List Operating Permit / Listar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "PUT"
+        ],
+        "function_name": "atualizar_alvara_funcionamento",
+        "description": "Update Operating Permit / Atualizar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "POST"
+        ],
+        "function_name": "criar_alvara_funcionamento",
+        "description": "Create new Operating Permit / Criar novo Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "obter_alvara_funcionamento",
+        "description": "Get Operating Permit by ID / Obter Alvará de Funcionamento por ID",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "listar_alvara_funcionamento",
+        "description": "List Operating Permit / Listar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "PUT"
+        ],
+        "function_name": "atualizar_alvara_funcionamento",
+        "description": "Update Operating Permit / Atualizar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "POST"
+        ],
+        "function_name": "criar_alvara_funcionamento",
+        "description": "Create new Operating Permit / Criar novo Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "obter_alvara_funcionamento",
+        "description": "Get Operating Permit by ID / Obter Alvará de Funcionamento por ID",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "listar_alvara_funcionamento",
+        "description": "List Operating Permit / Listar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "PUT"
+        ],
+        "function_name": "atualizar_alvara_funcionamento",
+        "description": "Update Operating Permit / Atualizar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "POST"
+        ],
+        "function_name": "criar_alvara_funcionamento",
+        "description": "Create new Operating Permit / Criar novo Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "obter_alvara_funcionamento",
+        "description": "Get Operating Permit by ID / Obter Alvará de Funcionamento por ID",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "listar_alvara_funcionamento",
+        "description": "List Operating Permit / Listar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "PUT"
+        ],
+        "function_name": "atualizar_alvara_funcionamento",
+        "description": "Update Operating Permit / Atualizar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "POST"
+        ],
+        "function_name": "criar_alvara_funcionamento",
+        "description": "Create new Operating Permit / Criar novo Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "obter_alvara_funcionamento",
+        "description": "Get Operating Permit by ID / Obter Alvará de Funcionamento por ID",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/",
+        "methods": [
+          "GET"
+        ],
+        "function_name": "listar_alvara_funcionamento",
+        "description": "List Operating Permit / Listar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      },
+      {
+        "endpoint": "/api/alvara-funcionamento/{item_id}",
+        "methods": [
+          "PUT"
+        ],
+        "function_name": "atualizar_alvara_funcionamento",
+        "description": "Update Operating Permit / Atualizar Alvará de Funcionamento",
+        "router_prefix": "/api/alvara-funcionamento",
+        "router_tags": [
+          "Alvará de Funcionamento"
+        ],
+        "frontend_admin": null,
+        "frontend_citizen": null,
+        "test_status": "pending",
+        "last_test_result": null,
+        "last_test_time": null
+      }
+    ],
+    "last_scanned": "2025-08-27T04:21:55.263528",
+    "scan_status": "success"
+  }
+}
